@@ -1,5 +1,5 @@
 import React from "react";
-import Styles from "@/shared/Components/Cards/largeCard/largeCard.module.scss";
+import Styles from "@/shared/Components/Cards/LargeCard/largeCard.module.scss";
 import { useTranslation } from "react-i18next";
 // import { Link } from "react-router-dom";
 const Cards = ({ image, icon, title, par }) => {

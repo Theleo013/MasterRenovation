@@ -1,5 +1,5 @@
 import React from "react";
-import Styles from "@/shared/Components/Cards/heroCard/heroCard.module.scss";
+import Styles from "@/shared/Components/Cards/HeroCard/heroCard.module.scss";
 import { useTranslation } from "react-i18next";
 import VideoPlayer from "@/shared/Components/VideoPlayer";
 
