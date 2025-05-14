@@ -1,0 +1,101 @@
+@use "../../../styles/partials/fonts" as *;
+@use "../../../styles/partials/mixins" as *;
+@use "../../../styles/partials/variables" as *;
+
+.burgerMenu {
+  @include w-h(1.8rem, 22px);
+  @include flexMulti(flex, column, space-around, null, null, null);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+
+  &:focus {
+    outline: none;
+  }
+  @include phone-xs {
+    @include w-h(1.2rem, 22px);
+  }
+  @include phone-sm {
+    @include w-h(1.7rem, 22px);
+  }
+  @include tablet-md {
+    @include w-h(1.7rem, 22px);
+  }
+  .line {
+    @include w-h(23px, 2px);
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    transition: all 0.3s linear;
+    position: relative;
+    transform-origin: 1px;
+  }
+
+  &.open {
+    .line:first-child {
+      transform: rotate(45deg);
+    }
+
+    .line:nth-child(2) {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+
+    .line:nth-child(3) {
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+.menu {
+  transform: translateX(-200%);
+  transition: transform 0.3s ease-in-out;
+  &.open {
+    transform: translateX(0);
+  }
+
+  a {
+    font-size: 14px;
+    font-family: Inter-Medium;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: color 0.3s linear;
+
+    &:hover {
+      color: rgba(252, 163, 17);
+    }
+  }
+  @include phone-xs {
+    @include space(flex, center, center, 7px);
+    a {
+      font-family: Inter-Medium;
+      font-size: $fs-xs !important;
+    }
+  }
+  @include phone-sm {
+    @include w-h(270px, null);
+    @include space(flex, center, center, 10px);
+
+    a {
+      font-family: Inter-Medium;
+      font-size: $fs-xs !important;
+    }
+  }
+  @include tablet-md {
+    @include w-h(325px, null);
+    @include space(flex, center, center, 10px);
+    a {
+      font-family: Inter-Medium;
+      font-size: $fs-sm !important;
+    }
+  }
+  @include pc-sm {
+    @include w-h(370px, null);
+    @include space(flex, center, center, 10px);
+    a {
+      font-family: Inter-Medium;
+      font-size: $fs-lg !important;
+    }
+  }
+}

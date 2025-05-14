@@ -1,0 +1,77 @@
+//& colors
+
+$primary-color: rgba(9, 8, 8, 1);
+$secondary-color: rgba(24, 23, 28, 1);
+$bg-color: rgba(247, 247, 247, 1);
+$bg-color2: rgba(219, 219, 219, 1);
+$bg-color3: rgba(2, 4, 44, 1);
+$bg-color4: rgba(23, 41, 68, 1);
+$bg-color5: rgba(29, 33, 109, 1);
+$bg-icon: rgba(125, 181, 249, 1);
+$list-color: rgba(79, 79, 79, 1);
+$footer-color: rgba(255, 255, 255, 1);
+$card-color: rgba(255, 255, 255, 1);
+$placeHolder-color: rgba(189, 189, 189, 1);
+$input-color: rgb(245 245 245);
+$hover-color: rgba(252, 163, 17);
+$span-color: rgba(219, 68, 68, 1);
+$span-color2: rgba(0, 90, 224, 1);
+$span-color3: rgba(228, 166, 45, 1);
+$span-color4: rgba(255, 103, 0, 1);
+$link-color: rgb(163, 161, 161);
+$btn-color: rgba(60, 97, 194, 1);
+$flash-color: rgba(0, 255, 102, 1);
+$wp-color: rgb(37 211 101);
+
+//& padding
+$pa-s: 8px;
+$pa-m: 16px;
+$pa-l: 32px;
+$pa-xl: 64px;
+$pa-xxl: 80px;
+$pa-xxxl: 100px;
+$pa-page: 200px 80px;
+$pa-page2: 50px 100px;
+$pa-page3: 20px 50px;
+$pa-page4: 100px 80px;
+$pa-page5: 150px 80px;
+$pa-page6: 100px 0 50px 0;
+$pa-responsive: 25px 15px;
+$pa-responsive2: 100px 50px;
+
+//& margin
+$ma-s: 8px;
+$ma-m: 16px;
+$ma-l: 32px;
+$ma-page: 50px 0;
+$ma-page2: 100px 0;
+
+//& font-size
+$fs-xs: 12px;
+$fs-sm: 14px;
+$fs-md: 16px;
+$fs-lg: 18px;
+$fs-xl: 24px;
+$fs-2xl: 28px;
+$fs-3xl: 32px;
+$fs-4xl: 40px;
+$fs-5xl: 48px;
+$fs-6xl: 60px;
+
+//& border-radius
+$br-s: 4px;
+$br-m: 8px;
+$br-l: 16px;
+$br-xl: 24px;
+$br-xxl: 50px;
+$br-round: 50%;
+
+//& border
+
+$br-1: 2px solid rgba(224, 224, 224, 1);
+$br-2: 1px solid rgba(242, 242, 242, 1);
+$br-3: 1px solid $primary-color;
+$br-4: 3px solid rgba(171, 169, 169.1);
+$br-5: 1px solid rgba(171, 169, 169.1);
+$br-6: 2px solid rgb(161, 159, 159);
+$br-7: 2px solid rgba(0, 90, 224, 1);

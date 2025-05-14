@@ -1,0 +1,121 @@
+{
+  "Language": "English",
+
+  "homepage": {
+    "homepage": "Home",
+    "homepage_main_title": "MasterRenovation",
+    "homepage_intro_paragraph": "With our experienced and professional craftsmen, we carry out home and office renovations perfectly. High quality, timely work, and customer satisfaction are our main principles.",
+    "homepage_services_button": "Our Services",
+    "homepage_experience_title": "Our Experience",
+    "homepage_experience_paragraph": "Our experience comes from the professional skills gained over many years and the trust of our clients. Whether it's a small repair job or a large renovation, every project is equally important to us.",
+
+    "our_work_title": "Our Work",
+    "our_work_paragraph": "Our work is focused on ensuring customer satisfaction. Each project is a new beginning and responsibility for us. We bring together functionality and aesthetic harmony in every corner of your home, turning your dreams into reality.",
+
+    "cta_title": "Do you need professional renovation? We can help!",
+    "cta_paragraph": "Want to start renovating your home or workplace but don't know where to begin? From wall colors to flooring, electrical and plumbing systems to interior design — we’re ready to answer all your questions. You can trust us to find the most suitable and affordable renovation solutions for you!",
+    "contact": "Contact",
+    "or": "or"
+  },
+  "services": {
+    "services": "Services",
+    "services_main_title": "Our Services",
+    "services_main_paragraph": "If your home needs a refresh, we are here for you. From full-scale renovations to small adjustments, we’re by your side at every step. In renovation, both functionality and aesthetics are prioritized. With our specialized craftsmen, we offer you durable, stylish, and long-lasting solutions. We consider every detail to make the renovation process easy, comfortable, and seamless.",
+
+    "services_question_title": "Have Any Questions About Our Services?",
+    "services_question_paragraph": "If you have any questions or need additional information about our services, feel free to contact us. Our professional team is ready to provide the most accurate and detailed answers tailored to your needs. Your satisfaction is important to us, and we strive to respond to your inquiries as quickly as possible."
+  },
+  "projects": {
+    "projects": "Projects",
+
+    "projects_main_title": "Our Projects",
+    "projects_main_paragraph": "We complete every project with professionalism and high responsibility. Our team pays special attention to every stage of the work, prioritizing precision, quality, and aesthetic appearance. Our main goal is to ensure customer satisfaction and build trust through the quality of our work.",
+
+    "projects_intro_title": "Get to Know Our Work",
+
+    "project_living_room_title": "Living Room",
+    "project_living_room_paragraph": "As Professional Renovation, we consider the living room as the main part that completes the overall look of the house, and we renovate it to suit any taste and design.",
+
+    "project_hallway_title": "Hallway",
+    "project_hallway_paragraph": "The hallway is the first impression of the house. As Professional Renovation, we renovate this space with taste, precision, and according to your preferences, based on functional and modern architecture.",
+
+    "project_kitchen_title": "Kitchen",
+    "project_kitchen_paragraph": "The kitchen is the heart of the house. As Professional Renovation, we renovate this space to your taste and modern standards, whether from scratch or by remodeling.",
+
+    "project_bathroom_title": "Bathroom",
+    "project_bathroom_paragraph": "As Professional Renovation, we consider the bathroom not just for daily needs but as a space that provides comfort and a sense of neatness. Whether with a simple or modern architecture, we renovate this area in a modern style, tailored to your taste.",
+
+    "project_kids_room_title": "Kids Room",
+    "project_kids_room_paragraph": "The kids room is the most fun part of a house. As Professional Renovation, we renovate this space with taste and a modern style, focusing on the comfort and safety of children.",
+
+    "project_bedroom_title": "Bedroom",
+    "project_bedroom_paragraph": "As Professional Renovation, we renovate your bedrooms with a modern approach and according to your requirements, focusing on your comfort, in any design."
+  },
+  "about": {
+    "about": "About",
+
+    "about_experience_title": "Our Professional Experts with Over 10+ Years of Experience Are at Your Service",
+    "about_experience_paragraph": "We provide personalized services tailored to our clients' needs. We pay special attention to each project and prioritize customer satisfaction.",
+
+    "about_commitments_title": "Our Commitments",
+    "about_commitments_paragraph": "You dream it, we make it real!",
+
+    "about_responsibility_title": "Responsibility",
+    "about_responsibility_paragraph": "We complete our work on time and in accordance with customer satisfaction.",
+
+    "about_quality_title": "Quality",
+    "about_quality_paragraph": "We perform precise and durable work according to high standards.",
+
+    "about_safety_title": "Safety",
+    "about_safety_paragraph": "We guarantee the quality of every renovation work we perform.",
+
+    "about_professionalism_title": "Professionalism",
+    "about_professionalism_paragraph": "Our experienced team of craftsmen successfully completes every task.",
+
+    "about_customer_satisfaction_title": "Customer Satisfaction",
+    "about_customer_satisfaction_paragraph": "Customer satisfaction is everything to us",
+    "about_customer_satisfaction_point1": "We renovate your home according to your taste with professional craftsmen.",
+    "about_customer_satisfaction_point2": "Precision in every detail, high results in every job.",
+    "about_customer_satisfaction_point3": "We offer fast and reliable solutions for your renovation projects.",
+    "about_professional_experts_title": "Professional Experts",
+    "about_professional_experts_paragraph": "Our professional craftsmen are always ready to serve you"
+  },
+  "cards": {
+    "card1_title": "Plumber",
+    "card1_paragraph": "Our plumber approaches his work with great responsibility. He pays attention to every detail and completes each task with high quality and precision. Customer satisfaction is always his top priority.",
+
+    "card2_title": "Tile Maker",
+    "card2_paragraph": "Our tile master stands out with his professionalism and precision in his work. He performs every task neatly, takes each measurement carefully, and works with maximum responsibility to ensure the result is perfect.",
+
+    "card3_title": "Wallpaper Installer",
+    "card3_paragraph": "Our wallpaper specialist excels in applying wallpaper with high professionalism; every corner and surface is handled with accuracy, delivering perfect alignment and aesthetic results.",
+
+    "card4_title": "Electrician",
+    "card4_paragraph": "The professional electrician has both technical knowledge and experience. He installs every wire and system with safety and precision, always ensuring optimal performance.",
+
+    "card5_title": "Plastering Specialist",
+    "card5_paragraph": "Our professional plastering specialist performs each task with high quality. Using a laser level and precise guides, he smooths every surface with accuracy. As a result, the surfaces become both durable and reliable.",
+
+    "card6_title": "Drywall Specialist",
+    "card6_paragraph": "The drywall expert is known for precise measurements and clean installations; they skillfully apply partition walls, ceiling systems, and decorative elements to create aesthetic spaces.",
+
+    "card7_title": "Painter",
+    "card7_paragraph": "Our painter is skilled in applying paint or emulsion. He prepares each surface properly, ensuring high-quality, durable results while achieving eye-catching outcomes that align with any desired aesthetic.",
+
+    "card_button": "Services"
+  },
+  "footer": {
+    "footer_paragraph": "Entrust your renovation work to professional hands. We prioritize quality in every detail.",
+    "copyright": "© 2025 All rights reserved.",
+    "footer_info_title": "Information",
+    "homepage": "Home",
+    "services": "Services",
+    "projects": "Projects",
+    "about": "About",
+    "footer_contact_title": "Contact Us"
+  },
+  "NotFound": {
+    "paragraph": "Your visited page not found",
+    "button": "Back to Home"
+  }
+}

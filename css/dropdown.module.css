@@ -1,0 +1,131 @@
+@font-face {
+  font-family: Poppins-Bold;
+  src: url(/assets/fonts/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: Inter-Medium;
+  src: url(/assets/fonts/Inter-Medium.ttf);
+}
+@font-face {
+  font-family: Montserrat-SemiBold;
+  src: url(/assets/fonts/Montserrat-SemiBold.ttf);
+}
+@font-face {
+  font-family: OpenSans-SemiBold;
+  src: url(/assets/fonts/OpenSans-SemiBold.ttf);
+}
+@font-face {
+  font-family: Roboto-Regular;
+  src: url(/assets/fonts/Roboto-Regular.ttf);
+}
+.dropdownContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.dropdownContainer .label {
+  color: rgb(255, 255, 255);
+  font-family: Roboto-Regular;
+}
+@media (max-width: 340px) {
+  .dropdownContainer .label {
+    display: none;
+  }
+}
+@media (min-width: 341px) and (max-width: 570px) {
+  .dropdownContainer .label {
+    display: none;
+  }
+}
+@media (min-width: 571px) and (max-width: 770px) {
+  .dropdownContainer .label {
+    display: none;
+  }
+}
+@media (min-width: 771px) and (max-width: 1024px) {
+  .dropdownContainer .label {
+    display: none;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1230px) {
+  .dropdownContainer .label {
+    display: none;
+  }
+}
+.dropdownContainer .languageDropdown {
+  width: 60px;
+  height: 30px;
+  border: 2px solid rgb(224, 224, 224);
+  border-radius: 4px;
+  background: transparent;
+  color: rgb(255, 255, 255);
+  outline: none;
+}
+.dropdownContainer .languageDropdown:hover {
+  border: 2px solid rgb(0, 90, 224);
+}
+@media (max-width: 340px) {
+  .dropdownContainer .languageDropdown {
+    width: 40px;
+    height: 20px;
+    font-size: 12px;
+  }
+}
+@media (min-width: 341px) and (max-width: 570px) {
+  .dropdownContainer .languageDropdown {
+    width: 40px;
+    height: 20px;
+    font-size: 12px;
+  }
+}
+@media (min-width: 571px) and (max-width: 770px) {
+  .dropdownContainer .languageDropdown {
+    width: 50px;
+    height: 25px;
+    font-size: 12px;
+  }
+}
+@media (min-width: 771px) and (max-width: 1024px) {
+  .dropdownContainer .languageDropdown {
+    width: 50px;
+    height: 25px;
+    font-size: 12px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1230px) {
+  .dropdownContainer .languageDropdown {
+    width: 50px;
+    height: 25px;
+    font-size: 12px;
+  }
+}
+.dropdownContainer .languageDropdown option {
+  color: rgb(255, 255, 255);
+  background-color: rgb(2, 4, 44);
+  font-family: Inter-Medium;
+}
+@media (max-width: 340px) {
+  .dropdownContainer .languageDropdown option {
+    font-size: 12px;
+  }
+}
+@media (min-width: 341px) and (max-width: 570px) {
+  .dropdownContainer .languageDropdown option {
+    font-size: 14px;
+  }
+}
+@media (min-width: 571px) and (max-width: 770px) {
+  .dropdownContainer .languageDropdown option {
+    font-size: 14px;
+  }
+}
+@media (min-width: 771px) and (max-width: 1024px) {
+  .dropdownContainer .languageDropdown option {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1230px) {
+  .dropdownContainer .languageDropdown option {
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=dropdown.module.css.map */

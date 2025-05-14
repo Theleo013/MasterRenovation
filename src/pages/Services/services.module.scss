@@ -1,0 +1,310 @@
+@use "../../styles/partials/fonts" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.servicesContainer {
+  .servicesMainContent {
+    @include flexDirection(flex, column, center, 50px);
+    padding: $pa-page4;
+    @include phone-xs {
+      padding: $pa-responsive;
+    }
+    @include phone-sm {
+      padding: $pa-responsive;
+    }
+    @include tablet-md {
+      padding: $pa-responsive;
+    }
+    @include pc-sm {
+      padding: $pa-responsive;
+    }
+    .servicesMainTitle {
+      @include flexDirection(flex, column, center, 20px);
+
+      h1 {
+        font-family: Poppins-Bold;
+        font-size: $fs-5xl;
+        color: $span-color2;
+        @include phone-xs {
+          font-size: $fs-xl;
+        }
+        @include phone-sm {
+          font-size: $fs-xl;
+        }
+        @include tablet-md {
+          font-size: $fs-3xl;
+        }
+        @include pc-sm {
+          font-size: $fs-4xl;
+        }
+        @include pc-lg {
+          font-size: $fs-4xl;
+        }
+      }
+      p {
+        @include w-h(900px, auto);
+        font-family: Roboto-Regular;
+        font-size: $fs-xl;
+        text-align: center;
+        color: $primary-color;
+        font-weight: 500;
+        @include phone-xs {
+          @include w-h(300px, auto);
+          font-size: $fs-sm;
+        }
+        @include phone-sm {
+          @include w-h(340px, auto);
+          font-size: $fs-sm;
+        }
+        @include tablet-md {
+          @include w-h(405px, auto);
+          font-size: $fs-md;
+        }
+        @include pc-sm {
+          @include w-h(470px, auto);
+          font-size: $fs-md;
+        }
+        @include pc-lg {
+          @include w-h(470px, auto);
+          font-size: $fs-md;
+        }
+      }
+    }
+    .servicesMainImage {
+      img {
+        @include w-h(900px, auto);
+        object-fit: cover;
+        @include phone-xs {
+          @include img-secondary-size;
+        }
+        @include phone-sm {
+          @include w-h(330px, auto);
+        }
+        @include tablet-md {
+          @include w-h(430px, auto);
+        }
+        @include pc-sm {
+          @include w-h(530px, auto);
+        }
+        @include pc-lg {
+          @include w-h(590px, auto);
+        }
+      }
+    }
+  }
+  .servicesCardsContainer {
+    @include flexDirection(flex, column, center, 30px);
+    padding: $pa-page5;
+    @include phone-xs {
+      padding: $pa-responsive;
+    }
+    @include phone-sm {
+      padding: $pa-responsive;
+    }
+    @include tablet-md {
+      padding: $pa-responsive;
+    }
+    @include pc-sm {
+      padding: $pa-responsive;
+    }
+    @include pc-lg {
+      padding: $pa-responsive;
+    }
+    .servicesCard {
+      @include space(flex, center, center, 20px);
+      @include phone-xs {
+        @include flexDirection(flex, column, center, 20px);
+      }
+      @include phone-sm {
+        @include flexDirection(flex, column, center, 20px);
+      }
+      @include tablet-md {
+        @include flexDirection(flex, column, center, 20px);
+      }
+      @include pc-sm {
+        @include flexDirection(flex, column, center, 20px);
+      }
+    }
+  }
+  .complaintContainer {
+    background-color: $bg-color5;
+    .complaintWrapper {
+      @include w-h(100%, 500px);
+      @include align(flex, space-evenly, center);
+      @include maxWidth;
+      @include phone-xs {
+        @include w-h(100%, 680px);
+        @include flexDirection(flex, column, center, null);
+        text-align: center;
+      }
+      @include phone-sm {
+        @include w-h(100%, 680px);
+        @include flexDirection(flex, column, center, null);
+      }
+      @include tablet-md {
+        @include w-h(100%, 680px);
+        @include flexDirection(flex, column, center, null);
+      }
+      @include pc-sm {
+        @include w-h(100%, 680px);
+        @include flexDirection(flex, column, center, null);
+      }
+      .complaintImage {
+        img {
+          @include w-h(480px, 504px);
+          @include phone-xs {
+            @include img-secondary-size;
+          }
+          @include phone-sm {
+            @include img-secondary-size;
+          }
+          @include tablet-md {
+            @include img-secondary-size;
+          }
+          @include pc-sm {
+            @include w-h(340px, auto);
+          }
+          @include pc-lg {
+            @include w-h(340px, auto);
+          }
+        }
+      }
+      .complaintContent {
+        @include flexDirection(flex, column, start, 30px);
+        @include phone-xs {
+          @include flexDirection(flex, column, center, 20px);
+        }
+        @include phone-sm {
+          @include flexDirection(flex, column, center, 20px);
+          text-align: center;
+        }
+        @include tablet-md {
+          @include flexDirection(flex, column, center, 20px);
+          text-align: center;
+        }
+        @include pc-sm {
+          @include flexDirection(flex, column, center, 20px);
+          text-align: center;
+        }
+        @include pc-lg {
+          @include flexDirection(flex, column, center, 20px);
+          text-align: center;
+        }
+        h3 {
+          @include w-h(520px, auto);
+          font-family: Montserrat-SemiBold;
+          font-size: $fs-3xl;
+          color: $span-color3;
+          @include phone-xs {
+            @include w-h(300px, auto);
+            font-size: $fs-lg;
+          }
+          @include phone-sm {
+            @include w-h(320px, auto);
+            font-size: $fs-lg;
+          }
+          @include tablet-md {
+            @include w-h(350px, auto);
+            font-size: $fs-xl;
+          }
+          @include pc-sm {
+            @include w-h(380px, auto);
+            font-size: $fs-2xl;
+          }
+          @include pc-lg {
+            @include w-h(380px, auto);
+            font-size: $fs-2xl;
+          }
+        }
+        p {
+          @include w-h(520px, auto);
+          font-family: Roboto-Regular;
+          font-size: $fs-md;
+          color: $card-color;
+          @include phone-xs {
+            @include w-h(300px, auto);
+            font-size: $fs-xs;
+          }
+          @include phone-sm {
+            @include w-h(320px, auto);
+            font-size: $fs-xs;
+          }
+          @include tablet-md {
+            @include w-h(390px, auto);
+            font-size: $fs-sm;
+          }
+          @include pc-sm {
+            @include w-h(480px, auto);
+            font-size: $fs-md;
+          }
+          @include pc-lg {
+            @include w-h(390px, auto);
+            font-size: $fs-md;
+          }
+        }
+        .servicesContact {
+          @include flex-space(flex, center, 10px);
+          img {
+            @include w-h(25px, 25px);
+            @include phone-xs {
+              @include w-h(15px, 15px);
+            }
+            @include phone-sm {
+              @include w-h(15px, 15px);
+            }
+            @include tablet-md {
+              @include w-h(20px, 20px);
+            }
+            @include pc-sm {
+              @include w-h(20px, 20px);
+            }
+            @include pc-lg {
+              @include w-h(20px, 20px);
+            }
+          }
+          span {
+            font-family: Roboto-Regular;
+            font-size: $fs-md;
+            color: $card-color;
+            @include phone-xs {
+              font-size: $fs-xs;
+            }
+            @include phone-sm {
+              font-size: $fs-xs;
+            }
+            @include tablet-md {
+              font-size: $fs-sm;
+            }
+            @include pc-sm {
+              font-size: $fs-md;
+            }
+            @include pc-lg {
+              font-size: $fs-md;
+            }
+          }
+          .wpLink {
+            @include w-h(80px, 30px);
+            @include flex-center;
+            background-color: $wp-color;
+            border-radius: $br-s;
+            @include phone-xs {
+              @include w-h(50px, 20px);
+            }
+            @include phone-sm {
+              @include w-h(50px, 20px);
+            }
+            @include tablet-md {
+              @include w-h(65px, 25px);
+            }
+            @include pc-sm {
+              @include w-h(65px, 25px);
+            }
+            @include pc-lg {
+              @include w-h(65px, 25px);
+            }
+          }
+        }
+      }
+    }
+  }
+}

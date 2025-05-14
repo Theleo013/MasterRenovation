@@ -1,0 +1,23 @@
+@use "../../../styles/partials/fonts" as *;
+@use "../../../styles/partials/mixins" as *;
+@use "../../../styles/partials/variables" as *;
+
+.videoPlayer {
+  @include w-h(500px !important, 300px !important);
+  border-radius: $br-s;
+  @include phone-xs {
+    @include w-h(230px !important, 150px !important);
+  }
+  @include phone-sm {
+    @include w-h(250px !important, 190px !important);
+  }
+  @include tablet-md {
+    @include w-h(300px !important, 290px !important);
+  }
+  @include pc-sm {
+    @include w-h(350px !important, 330px !important);
+  }
+  @include pc-lg {
+    @include w-h(350px !important, 330px !important);
+  }
+}

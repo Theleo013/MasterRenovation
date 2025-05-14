@@ -1,0 +1,26 @@
+@use "../../../styles/partials/fonts" as *;
+@use "../../../styles/partials/mixins" as *;
+@use "../../../styles/partials/variables" as *;
+
+.whatsappLinkContainer {
+  @include flex-center;
+  @include w-h(130px, 130px);
+  @include phone-xs {
+    @include w-h(15px, 15px);
+  }
+  @include phone-sm {
+    @include w-h(15px, 15px);
+  }
+  @include tablet-md {
+    @include w-h(15px, 15px);
+  }
+  @include pc-sm {
+    @include w-h(15px, 15px);
+  }
+  .whatsappButton {
+    cursor: pointer;
+    div {
+      @include flex-space(flex, center, 10px);
+    }
+  }
+}

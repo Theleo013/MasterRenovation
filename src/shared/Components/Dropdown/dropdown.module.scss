@@ -1,0 +1,78 @@
+@use "../../../styles/partials/fonts" as *;
+@use "../../../styles/partials/mixins" as *;
+@use "../../../styles/partials/variables" as *;
+
+.dropdownContainer {
+  @include flex-space(flex, center, 10px);
+
+  .label {
+    color: $card-color;
+    font-family: Roboto-Regular;
+    @include phone-xs {
+      display: none;
+    }
+    @include phone-sm {
+      display: none;
+    }
+    @include tablet-md {
+      display: none;
+    }
+    @include pc-sm {
+      display: none;
+    }
+    @include pc-lg {
+      display: none;
+    }
+  }
+  .languageDropdown {
+    @include w-h(60px, 30px);
+    border: $br-1;
+    border-radius: $br-s;
+    background: transparent;
+    color: $card-color;
+    outline: none;
+    &:hover {
+      border: $br-7;
+    }
+    @include phone-xs {
+      @include w-h(40px, 20px);
+      font-size: $fs-xs;
+    }
+    @include phone-sm {
+      @include w-h(40px, 20px);
+      font-size: $fs-xs;
+    }
+    @include tablet-md {
+      @include w-h(50px, 25px);
+      font-size: $fs-xs;
+    }
+    @include pc-sm {
+      @include w-h(50px, 25px);
+      font-size: $fs-xs;
+    }
+    @include pc-lg {
+      @include w-h(50px, 25px);
+      font-size: $fs-xs;
+    }
+    option {
+      color: $card-color;
+      background-color: $bg-color3;
+      font-family: Inter-Medium;
+      @include phone-xs {
+        font-size: $fs-xs;
+      }
+      @include phone-sm {
+        font-size: $fs-sm;
+      }
+      @include tablet-md {
+        font-size: $fs-sm;
+      }
+      @include pc-sm {
+        font-size: $fs-sm;
+      }
+      @include pc-lg {
+        font-size: $fs-sm;
+      }
+    }
+  }
+}

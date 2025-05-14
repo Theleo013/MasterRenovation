@@ -1,0 +1,96 @@
+@use "../../../styles/partials/fonts" as *;
+@use "../../../styles/partials/mixins" as *;
+@use "../../../styles/partials/variables" as *;
+
+.notFoundContainer {
+  @include flexDirection(flex, column, center, 30px);
+  padding: $pa-page4;
+  @include phone-xs {
+    padding: $pa-responsive;
+  }
+  @include phone-sm {
+    padding: $pa-responsive;
+  }
+  @include tablet-md {
+    padding: $pa-responsive2;
+  }
+  .notFoundImage {
+    img {
+      @include w-h(300px, 300px);
+      @include phone-xs {
+        @include w-h(250px, 250px);
+      }
+    }
+  }
+  .notFoundInfo {
+    p {
+      font-size: $fs-2xl;
+      color: $primary-color;
+      font-family: Roboto-Regular;
+      @include phone-xs {
+        font-size: $fs-md;
+      }
+      @include phone-sm {
+        font-size: $fs-md;
+      }
+      @include tablet-md {
+        font-size: $fs-lg;
+      }
+    }
+  }
+  .notFoundButton {
+    @include w-h(250px, 50px);
+    @include space(flex, center, center, 10px);
+    background-color: $btn-color;
+    border-radius: $br-s;
+    @include phone-xs {
+      @include w-h(240px, 40px);
+    }
+    @include phone-sm {
+      @include w-h(240px, 40px);
+    }
+    @include tablet-md {
+      @include w-h(240px, 40px);
+    }
+    .arrowIcon {
+      @include w-h(25px, 25px);
+      @include phone-xs {
+        @include w-h(20px, 20px);
+      }
+      @include phone-sm {
+        @include w-h(20px, 20px);
+      }
+      @include tablet-md {
+        @include w-h(20px, 20px);
+      }
+    }
+    a {
+      color: $bg-color;
+      font-family: Inter-Medium;
+      font-size: $fs-md;
+      border: none;
+      cursor: pointer;
+      @include phone-xs {
+        font-size: $fs-sm;
+      }
+      @include phone-sm {
+        font-size: $fs-sm;
+      }
+      @include tablet-md {
+        font-size: $fs-sm;
+      }
+    }
+    .homeIcon {
+      @include w-h(30px, 30px);
+      @include phone-xs {
+        @include w-h(20px, 20px);
+      }
+      @include phone-sm {
+        @include w-h(20px, 20px);
+      }
+      @include tablet-md {
+        @include w-h(20px, 20px);
+      }
+    }
+  }
+}

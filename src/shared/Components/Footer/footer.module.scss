@@ -1,0 +1,252 @@
+@use "../../../styles/partials/fonts" as *;
+@use "../../../styles/partials/mixins" as *;
+@use "../../../styles/partials/variables" as *;
+
+.footerContainer {
+  @include w-h(100%, auto);
+  @include align(flex, space-evenly, center);
+  padding: $pa-page3;
+  background-color: $bg-color3;
+  @include phone-xs {
+    @include flexDirection(flex, column, center, null);
+    padding: $pa-responsive;
+    position: relative;
+  }
+  @include phone-sm {
+    @include flexDirection(flex, column, center, null);
+    padding: $pa-responsive;
+    position: relative;
+  }
+  @include tablet-md {
+    @include flexDirection(flex, column, center, null);
+    padding: $pa-responsive;
+    position: relative;
+  }
+  @include pc-sm {
+    @include flexDirection(flex, column, center, null);
+    padding: $pa-responsive;
+    position: relative;
+  }
+  .footerLogo {
+    @include flexDirection(flex, column, start, 20px);
+    @include phone-xs {
+      @include flexDirection(flex, column, center, 200px);
+      text-align: center;
+    }
+    @include phone-sm {
+      @include flexDirection(flex, column, center, 200px);
+      text-align: center;
+    }
+    @include tablet-md {
+      @include flexDirection(flex, column, center, 200px);
+      text-align: center;
+    }
+    @include pc-sm {
+      @include flexDirection(flex, column, center, 200px);
+      text-align: center;
+    }
+    .mainLogo {
+      img {
+        @include w-h(104px, 64px);
+        object-fit: cover;
+        @include phone-xs {
+          @include w-h(100px, 64px);
+        }
+        @include phone-sm {
+          @include w-h(100px, 64px);
+        }
+        @include tablet-md {
+          @include w-h(100px, 64px);
+        }
+        @include pc-sm {
+          @include w-h(100px, 64px);
+        }
+      }
+    }
+    .mainParagraph {
+      @include flexDirection(flex, column, start, 15px);
+      @include phone-xs {
+        @include flexDirection(flex, column, center, 20px);
+      }
+      @include phone-sm {
+        @include flexDirection(flex, column, center, 20px);
+      }
+      @include tablet-md {
+        @include flexDirection(flex, column, center, 20px);
+      }
+      @include pc-sm {
+        @include flexDirection(flex, column, center, 20px);
+      }
+      p {
+        @include w-h(353px, null);
+        font-size: $fs-xs;
+        color: $footer-color;
+        font-family: Roboto-Regular;
+        @include phone-xs {
+          @include w-h(247px, null);
+        }
+        @include phone-sm {
+          @include w-h(247px, null);
+        }
+        @include tablet-md {
+          @include w-h(330px, null);
+        }
+        @include pc-sm {
+          @include w-h(330px, null);
+          font-size: $fs-sm;
+        }
+      }
+    }
+  }
+  .responsiveContainer {
+    @include flex-space(flex, start, 250px);
+    @include phone-xs {
+      @include flex-space(flex, start, 20px);
+      position: absolute;
+      top: 6em;
+    }
+    @include phone-sm {
+      @include flex-space(flex, start, 30px);
+      position: absolute;
+      top: 6em;
+    }
+    @include tablet-md {
+      @include flex-space(flex, start, 100px);
+      position: absolute;
+      top: 6em;
+    }
+    @include pc-sm {
+      @include flex-space(flex, start, 100px);
+      position: absolute;
+      top: 6em;
+    }
+    .footerInfo {
+      @include flexDirection(flex, column, center, 20px);
+      @include phone-xs {
+        @include flexDirection(flex, column, center, 20px);
+      }
+      @include phone-sm {
+        @include flexDirection(flex, column, center, 20px);
+      }
+      @include tablet-md {
+        @include flexDirection(flex, column, center, 20px);
+      }
+      @include pc-sm {
+        @include flexDirection(flex, column, center, 20px);
+      }
+      span {
+        font-size: $fs-sm;
+        color: $footer-color;
+        font-family: Montserrat-SemiBold;
+        @include phone-xs {
+          font-size: $fs-xs;
+        }
+        @include phone-sm {
+          font-size: $fs-xs;
+        }
+        @include tablet-md {
+          font-size: $fs-sm;
+        }
+        @include pc-sm {
+          font-size: $fs-md;
+        }
+      }
+      ul {
+        li {
+          a {
+            font-size: $fs-xs;
+            color: $footer-color;
+            font-family: Inter-Medium;
+            &:hover {
+              color: $hover-color;
+              transition: 0.5s;
+            }
+            @include pc-sm {
+              font-size: $fs-sm;
+            }
+          }
+        }
+      }
+    }
+    .footerDivide {
+      display: none;
+      @include phone-xs {
+        display: block;
+        @include w-h(1px, 0);
+        background-color: $card-color;
+        transform: rotate(0deg);
+        transition: height 3s ease-out;
+        overflow: hidden;
+      }
+      @include phone-sm {
+        display: block;
+        @include w-h(1px, 0);
+        background-color: $card-color;
+        transform: rotate(0deg);
+        transition: height 3s ease-out;
+        overflow: hidden;
+      }
+      @include tablet-md {
+        display: block;
+        @include w-h(1px, 0);
+        background-color: $card-color;
+        transform: rotate(0deg);
+        transition: height 3s ease-out;
+        overflow: hidden;
+      }
+      @include pc-sm {
+        display: block;
+        @include w-h(1px, 0);
+        background-color: $card-color;
+        transform: rotate(0deg);
+        transition: height 3s ease-out;
+        overflow: hidden;
+      }
+    }
+
+    .active {
+      display: none;
+      @include phone-xs {
+        display: block;
+        height: 140px;
+      }
+      @include phone-sm {
+        display: block;
+        height: 140px;
+      }
+      @include tablet-md {
+        display: block;
+        height: 140px;
+      }
+      @include pc-sm {
+        display: block;
+        height: 140px;
+      }
+    }
+    .footerSocials {
+      @include flexDirection(flex, column, center, 10px);
+      span {
+        font-size: $fs-sm;
+        color: $footer-color;
+        font-family: Montserrat-SemiBold;
+        @include phone-xs {
+          font-size: $fs-xs;
+        }
+        @include phone-sm {
+          font-size: $fs-xs;
+        }
+        @include tablet-md {
+          font-size: $fs-xs;
+        }
+        @include pc-sm {
+          font-size: $fs-sm;
+        }
+      }
+      a {
+        img {
+          @include w-h(24px, 24px);
+        }
+      }
+    }
+  }
+}

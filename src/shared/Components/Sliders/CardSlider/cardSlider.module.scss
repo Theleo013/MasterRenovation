@@ -1,0 +1,171 @@
+@use "../../../../styles/partials/fonts" as *;
+@use "../../../../styles/partials/mixins" as *;
+@use "../../../../styles/partials/variables" as *;
+
+.sliderContainer {
+  @include w-h(990px, 540px);
+  position: relative;
+  margin: 0 auto;
+
+  @include phone-xs {
+    @include w-h(220px, null);
+  }
+  @include phone-sm {
+    @include w-h(220px, null);
+  }
+  @include tablet-md {
+    @include w-h(430px, null);
+  }
+  @include pc-sm {
+    @include w-h(430px, null);
+  }
+  @include pc-lg {
+    @include w-h(660px, null);
+  }
+
+  .sliderWindow {
+    width: 960px;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    @include phone-xs {
+      width: 225px;
+      padding: 10px;
+    }
+    @include phone-sm {
+      width: 225px;
+      padding: 10px;
+    }
+    @include tablet-md {
+      width: 435px;
+      padding: 10px;
+    }
+    @include pc-sm {
+      width: 435px;
+      padding: 10px;
+    }
+    @include pc-lg {
+      width: 665px;
+      padding: 10px;
+    }
+  }
+
+  .sliderTrack {
+    display: flex;
+    gap: 30px;
+    transition: transform 0.4s ease;
+    @include phone-xs {
+      gap: 15px;
+    }
+    @include phone-sm {
+      gap: 15px;
+    }
+    @include tablet-md {
+      gap: 15px;
+    }
+    @include pc-sm {
+      gap: 15px;
+    }
+    @include pc-lg {
+      gap: 20px;
+    }
+
+    .slide {
+      flex: 0 0 300px;
+      height: 540px;
+      box-sizing: border-box;
+
+      @include phone-xs {
+        flex: 0 0 200px;
+      }
+      @include phone-sm {
+        flex: 0 0 200px;
+      }
+      @include tablet-md {
+        flex: 0 0 200px;
+      }
+      @include pc-sm {
+        flex: 0 0 200px;
+      }
+      @include pc-lg {
+        flex: 0 0 200px;
+      }
+    }
+  }
+
+  .prevButton,
+  .nextButton {
+    @include w-h(32px, 32px);
+    @include flex-center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+    padding: 0;
+  }
+
+  .prevButton {
+    left: -15px;
+
+    img {
+      @include w-h(30px, 30px);
+      background-color: $card-color;
+      border-radius: 4px;
+
+      &:hover {
+        background-color: $hover-color;
+        transition: background-color 0.3s ease;
+      }
+
+      @include phone-xs {
+        @include w-h(25px, 25px);
+      }
+      @include phone-sm {
+        @include w-h(25px, 25px);
+      }
+      @include tablet-md {
+        @include w-h(25px, 25px);
+      }
+      @include pc-sm {
+        @include w-h(25px, 25px);
+      }
+      @include pc-lg {
+        @include w-h(25px, 25px);
+      }
+    }
+  }
+
+  .nextButton {
+    right: -15px;
+
+    img {
+      @include w-h(30px, 30px);
+      background-color: $card-color;
+      border-radius: 4px;
+
+      &:hover {
+        background-color: $hover-color;
+        transition: background-color 0.3s ease;
+      }
+
+      @include phone-xs {
+        @include w-h(25px, 25px);
+      }
+      @include phone-sm {
+        @include w-h(25px, 25px);
+      }
+      @include tablet-md {
+        @include w-h(25px, 25px);
+      }
+      @include pc-sm {
+        @include w-h(25px, 25px);
+      }
+      @include pc-lg {
+        @include w-h(25px, 25px);
+      }
+    }
+  }
+}

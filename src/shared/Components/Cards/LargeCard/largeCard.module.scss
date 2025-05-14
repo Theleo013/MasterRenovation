@@ -1,0 +1,152 @@
+@use "../../../../styles/partials/fonts" as *;
+@use "../../../../styles/partials/mixins" as *;
+@use "../../../../styles/partials/variables" as *;
+
+.cardsContainer {
+  @include flexDirection(flex, column, center, 40px);
+  @include w-h(340px, 590px);
+  box-shadow: 0px 0px 4px 0px $bg-color4;
+  border-radius: $br-s;
+  @include phone-xs {
+    @include w-h(250px, 450px);
+    gap: 25px;
+  }
+  @include phone-sm {
+    gap: 25px;
+    @include w-h(250px, 450px);
+  }
+  @include tablet-md {
+    gap: 25px;
+    @include w-h(250px, 470px);
+  }
+  @include pc-sm {
+    gap: 25px;
+    @include w-h(250px, 480px);
+  }
+  @include pc-lg {
+    gap: 30px;
+    @include w-h(250px, 480px);
+  }
+  .cardImagesWrapper {
+    .cardImage {
+      position: relative;
+      img {
+        @include w-h(340px, 350px);
+        border-radius: $br-s;
+        object-fit: cover;
+        @include phone-xs {
+          @include w-h(250px, 250px);
+        }
+        @include phone-sm {
+          @include w-h(250px, 250px);
+        }
+        @include tablet-md {
+          @include w-h(250px, 250px);
+        }
+        @include pc-sm {
+          @include w-h(250px, 250px);
+        }
+        @include pc-lg {
+          @include w-h(250px, 250px);
+        }
+      }
+      .cardIcon {
+        @include w-h(60px, 60px);
+        @include flex-center;
+        background-color: $bg-icon;
+        position: absolute;
+        bottom: -20px;
+        left: 134px;
+        z-index: 100;
+        border-radius: 50%;
+        @include phone-xs {
+          @include w-h(50px, 50px);
+          bottom: -18px;
+          left: 95px;
+        }
+        @include phone-sm {
+          @include w-h(50px, 50px);
+          bottom: -18px;
+          left: 95px;
+        }
+        @include tablet-md {
+          @include w-h(50px, 50px);
+          bottom: -18px;
+          left: 95px;
+        }
+        @include pc-sm {
+          @include w-h(50px, 50px);
+          bottom: -18px;
+          left: 95px;
+        }
+        @include pc-lg {
+          @include w-h(50px, 50px);
+          bottom: -18px;
+          left: 95px;
+        }
+        img {
+          @include w-h(25px, 25px);
+          @include phone-xs {
+            @include w-h(20px, 20px);
+          }
+          @include phone-sm {
+            @include w-h(20px, 20px);
+          }
+          @include tablet-md {
+            @include w-h(20px, 20px);
+          }
+          @include pc-sm {
+            @include w-h(20px, 20px);
+          }
+          @include pc-lg {
+            @include w-h(20px, 20px);
+          }
+        }
+      }
+    }
+  }
+  .cardContentContainer {
+    @include flexDirection(flex, column, center, 20px);
+    text-align: center;
+    h3 {
+      font-family: Montserrat-SemiBold;
+      font-size: $fs-lg;
+      color: $primary-color;
+    }
+    p {
+      @include w-h(254px, 110px);
+      font-family: Roboto-regular;
+      font-size: $fs-sm;
+      color: $primary-color;
+      @include phone-xs {
+        font-size: $fs-xs;
+        @include w-h(230px, 110px);
+      }
+      @include phone-sm {
+        font-size: $fs-xs;
+        @include w-h(230px, 110px);
+      }
+      @include tablet-md {
+        @include w-h(240px, 110px);
+      }
+      @include pc-sm {
+        @include w-h(240px, 110px);
+      }
+      @include pc-lg {
+        @include w-h(243px, 110px);
+      }
+    }
+    .cardButton {
+      @include w-h(100px, 25px);
+      @include flex-center;
+      background-color: $btn-color;
+      border: none;
+      border-radius: $br-s;
+      a {
+        color: $card-color;
+        font-family: Poppins-Regular;
+        font-size: $fs-sm;
+      }
+    }
+  }
+}

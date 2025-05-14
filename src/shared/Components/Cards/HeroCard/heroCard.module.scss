@@ -1,0 +1,161 @@
+@use "../../../../styles/partials/fonts" as *;
+@use "../../../../styles/partials/mixins" as *;
+@use "../../../../styles/partials/variables" as *;
+
+.heroCardContainer {
+  background-color: $bg-color4;
+  .heroCardWrapper {
+    @include align(flex, space-around, center);
+    @include maxWidth;
+    flex-direction: row;
+    padding: $pa-page4;
+    &.reverse {
+      flex-direction: row-reverse;
+      @include phone-xs {
+        flex-direction: column-reverse;
+      }
+      @include phone-sm {
+        flex-direction: column-reverse;
+      }
+      @include tablet-md {
+        flex-direction: column-reverse;
+      }
+      @include pc-sm {
+        flex-direction: column-reverse;
+      }
+      // @include pc-lg {
+      //   flex-direction: column-reverse;
+      // }
+    }
+    @include phone-xs {
+      @include flexDirection(flex, column, center, 40px);
+      padding: $pa-responsive;
+    }
+    @include phone-sm {
+      @include flexDirection(flex, column, center, 40px);
+      padding: $pa-responsive;
+    }
+    @include tablet-md {
+      @include flexDirection(flex, column, center, 40px);
+      padding: $pa-responsive;
+    }
+    @include pc-sm {
+      @include flexDirection(flex, column, center, 40px);
+      padding: $pa-responsive;
+    }
+    @include pc-lg {
+      padding: $pa-responsive2;
+    }
+    .mediaWrapper {
+      img {
+        @include w-h(390px, 340px);
+        object-fit: cover;
+        border-radius: $br-s;
+        @include phone-xs {
+          @include img-primary-size;
+        }
+        @include phone-sm {
+          @include w-h(250px, 190px);
+        }
+        @include tablet-md {
+          @include w-h(300px, 290px);
+        }
+        @include pc-sm {
+          @include w-h(350px, 330px);
+        }
+        @include pc-lg {
+          @include w-h(350px, 330px);
+        }
+      }
+      .video {
+        @include w-h(390px, 340px);
+        border-radius: $br-s;
+        @include phone-xs {
+          @include w-h(190px, 150px);
+        }
+        @include phone-sm {
+          @include w-h(250px, 190px);
+        }
+        @include tablet-md {
+          @include w-h(300px, 290px);
+        }
+        @include pc-sm {
+          @include w-h(350px, 330px);
+        }
+        @include pc-lg {
+          @include w-h(350px, 330px);
+        }
+      }
+    }
+
+    .content {
+      @include flexDirection(flex, column, start, 30px);
+      @include phone-xs {
+        @include flexDirection(flex, column, center, 10px);
+        text-align: center;
+      }
+      @include phone-sm {
+        @include flexDirection(flex, column, center, 10px);
+        text-align: center;
+      }
+      @include tablet-md {
+        @include flexDirection(flex, column, center, 10px);
+        text-align: center;
+      }
+      @include pc-sm {
+        @include flexDirection(flex, column, center, 10px);
+        text-align: center;
+      }
+      @include pc-lg {
+        @include flexDirection(flex, column, center, 20px);
+        text-align: center;
+      }
+      span {
+        color: $span-color3;
+        font-size: $fs-4xl;
+        font-family: Poppins-Bold;
+        @include phone-xs {
+          font-size: $fs-xl;
+        }
+        @include phone-sm {
+          font-size: $fs-xl;
+        }
+        @include tablet-md {
+          font-size: $fs-2xl;
+        }
+        @include pc-sm {
+          font-size: $fs-3xl;
+        }
+        @include pc-lg {
+          font-size: $fs-3xl;
+        }
+      }
+      p {
+        @include w-h(532px, auto);
+        font-size: $fs-xl;
+        color: $card-color;
+        font-family: Roboto-Regular;
+        @include phone-xs {
+          @include w-h(280px, auto);
+          font-size: $fs-sm;
+        }
+        @include phone-sm {
+          @include w-h(310px, auto);
+          font-size: $fs-sm;
+        }
+        @include tablet-md {
+          @include w-h(380px, auto);
+          font-size: $fs-sm;
+        }
+        @include pc-sm {
+          @include w-h(550px, auto);
+          font-size: $fs-md;
+        }
+        @include pc-lg {
+          @include w-h(460px, auto);
+          font-size: $fs-md;
+        }
+      }
+    }
+  }
+}

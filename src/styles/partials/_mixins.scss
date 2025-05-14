@@ -1,0 +1,136 @@
+$phone-xs: 340px;
+$phone-sm: 570px;
+$tablet-md: 770px;
+$pc-sm: 1024px;
+$pc-lg: 1230px;
+$pc-xl: 1440px;
+
+@mixin phone-xs {
+  @media (max-width: $phone-xs) {
+    @content;
+  }
+}
+@mixin phone-sm {
+  @media (min-width: ($phone-xs + 1px)) and (max-width: $phone-sm) {
+    @content;
+  }
+}
+
+@mixin tablet-md {
+  @media (min-width: ($phone-sm + 1px)) and (max-width: $tablet-md) {
+    @content;
+  }
+}
+
+@mixin pc-sm {
+  @media (min-width: ($tablet-md + 1px)) and (max-width: $pc-sm) {
+    @content;
+  }
+}
+
+@mixin pc-lg {
+  @media (min-width: ($pc-sm + 1px)) and (max-width: $pc-lg) {
+    @content;
+  }
+}
+@mixin pc-xl {
+  @media (min-width: ($pc-lg + 1px)) and (max-width: $pc-xl) {
+    @content;
+  }
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin space-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@mixin space-evenly {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+@mixin flex-align {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+@mixin flexMulti($display, $direction, $justify, $align, $text-align, $gap) {
+  display: $display;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  text-align: $text-align;
+  gap: $gap;
+}
+@mixin flex-space($display, $align, $space) {
+  display: $display;
+  align-items: $align;
+  gap: $space;
+}
+
+@mixin flexDirection($display, $direction, $align, $space) {
+  display: $display;
+  flex-direction: $direction;
+  align-items: $align;
+  gap: $space;
+}
+
+@mixin justify($flex, $justify) {
+  display: $flex;
+  justify-content: $justify;
+}
+@mixin align($flex, $justify, $align) {
+  display: $flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+@mixin space($flex, $justify, $align, $space) {
+  display: $flex;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $space;
+}
+@mixin space($flex, $justify, $align, $space) {
+  display: $flex;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $space;
+}
+@mixin w-h($width, $height) {
+  width: $width;
+  height: $height;
+}
+@mixin btn-primary {
+  width: 186px;
+  height: 50px;
+  border-radius: 8px;
+  background-color: rgba(142, 122, 218, 1);
+}
+
+@mixin img-primary-size {
+  width: 190px;
+  height: 150px;
+}
+@mixin img-secondary-size {
+  width: 300px;
+  height: auto;
+}
+
+@mixin maxWidth {
+  max-width: 1440px;
+  margin: 0 auto;
+}

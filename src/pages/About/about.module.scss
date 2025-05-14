@@ -1,0 +1,631 @@
+@use "../../styles/partials/fonts" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.aboutConatiner {
+  .aboutMainContent {
+    @include flexDirection(flex, column, null, 50px);
+    .aboutMainTitle {
+      @include flexDirection(flex, column, center, 20px);
+      padding: $pa-page6;
+      text-align: center;
+      @include phone-xs {
+        padding: $pa-responsive;
+      }
+      @include phone-sm {
+        padding: $pa-responsive;
+      }
+      @include tablet-md {
+        padding: $pa-responsive;
+      }
+      @include pc-sm {
+        padding: $pa-responsive;
+      }
+      @include pc-sm {
+        padding: $pa-responsive2;
+      }
+      h1 {
+        @include w-h(900px, auto);
+        font-family: Poppins-Bold;
+        font-size: $fs-4xl;
+        color: $span-color2;
+        @include phone-xs {
+          @include w-h(305px, auto);
+          font-size: $fs-xl;
+        }
+        @include phone-sm {
+          @include w-h(325px, auto);
+          font-size: $fs-xl;
+        }
+        @include tablet-md {
+          @include w-h(390px, auto);
+          font-size: $fs-2xl;
+        }
+        @include pc-sm {
+          @include w-h(440px, auto);
+          font-size: $fs-3xl;
+        }
+        @include pc-lg {
+          @include w-h(510px, auto);
+          font-size: $fs-3xl;
+        }
+      }
+      p {
+        @include w-h(900px, auto);
+        font-family: Roboto-Regular;
+        font-size: $fs-xl;
+        color: $primary-color;
+        @include phone-xs {
+          @include w-h(300px, auto);
+          font-size: $fs-sm;
+        }
+        @include phone-sm {
+          @include w-h(320px, auto);
+          font-size: $fs-sm;
+        }
+        @include tablet-md {
+          @include w-h(425px, auto);
+          font-size: $fs-md;
+        }
+        @include pc-sm {
+          @include w-h(490px, auto);
+          font-size: $fs-lg;
+        }
+        @include pc-lg {
+          @include w-h(550px, auto);
+          font-size: $fs-lg;
+        }
+      }
+    }
+    .aboutMainImage {
+      @include w-h(100%, 700px);
+      @include flex-center;
+      background-color: $bg-color4;
+      @include phone-xs {
+        @include w-h(100%, 300px);
+      }
+      @include phone-sm {
+        @include w-h(100%, 300px);
+      }
+      @include tablet-md {
+        @include w-h(100%, 360px);
+      }
+      @include pc-sm {
+        @include w-h(100%, 360px);
+      }
+      @include pc-lg {
+        @include w-h(100%, 470px);
+      }
+      img {
+        @include w-h(900px, 600px);
+        @include phone-xs {
+          @include img-secondary-size;
+        }
+        @include phone-sm {
+          @include w-h(330px, auto);
+        }
+        @include tablet-md {
+          @include w-h(450px, auto);
+        }
+        @include pc-sm {
+          @include w-h(500px, auto);
+        }
+        @include pc-lg {
+          @include w-h(640px, auto);
+        }
+      }
+    }
+  }
+  .aboutCommitment {
+    @include flexDirection(flex, column, center, 50px);
+    padding: $pa-page4;
+    @include phone-xs {
+      padding: $pa-responsive;
+    }
+    @include phone-sm {
+      padding: $pa-responsive;
+    }
+    @include tablet-md {
+      padding: $pa-responsive;
+    }
+    @include pc-sm {
+      padding: $pa-responsive;
+    }
+    @include pc-lg {
+      padding: $pa-responsive2;
+    }
+    .commitmentTitle {
+      @include flexDirection(flex, column, center, 20px);
+      text-align: center;
+      h2 {
+        font-family: Montserrat-SemiBold;
+        font-size: $fs-4xl;
+        color: $span-color2;
+        @include phone-xs {
+          font-size: $fs-xl;
+        }
+        @include phone-sm {
+          font-size: $fs-xl;
+        }
+        @include tablet-md {
+          font-size: $fs-2xl;
+        }
+        @include pc-sm {
+          font-size: $fs-3xl;
+        }
+        @include pc-lg {
+          font-size: $fs-3xl;
+        }
+      }
+      p {
+        font-family: Roboto-Regular;
+        font-size: $fs-xl;
+        color: $primary-color;
+        @include phone-xs {
+          font-size: $fs-md;
+        }
+        @include phone-sm {
+          font-size: $fs-md;
+        }
+        @include tablet-md {
+          font-size: $fs-lg;
+        }
+        @include pc-sm {
+          font-size: $fs-xl;
+        }
+        @include pc-lg {
+          font-size: $fs-xl;
+        }
+      }
+    }
+    .commitmentContentWrapper {
+      @include flex-space(flex, center, 30px);
+      @include phone-xs {
+        @include flexDirection(flex, column, center, 20px);
+      }
+      @include phone-sm {
+        @include flexDirection(flex, column, center, 20px);
+      }
+      @include tablet-md {
+        @include flexDirection(flex, column, center, 20px);
+      }
+      @include pc-sm {
+        @include flexDirection(flex, column, center, 20px);
+      }
+      .commitmentContent {
+        @include w-h(250px, 280px);
+        @include flexDirection(flex, column, center, 20px);
+        padding: $pa-s;
+        border-radius: $br-s;
+        box-shadow: 0px 0px 4px 1px $bg-color4;
+        @include phone-xs {
+          @include w-h(220px, 200px);
+        }
+        @include phone-sm {
+          @include w-h(220px, 200px);
+        }
+        @include tablet-md {
+          @include w-h(220px, 200px);
+        }
+        @include pc-sm {
+          @include w-h(220px, 200px);
+        }
+        @include pc-lg {
+          @include w-h(220px, 200px);
+        }
+        .commitmentIcon {
+          @include w-h(100px, 100px);
+          @include flex-center;
+          border-radius: 50%;
+          background-color: $bg-color4;
+          @include phone-xs {
+            @include w-h(50px, 50px);
+          }
+          @include phone-sm {
+            @include w-h(50px, 50px);
+          }
+          @include tablet-md {
+            @include w-h(50px, 50px);
+          }
+          @include pc-sm {
+            @include w-h(50px, 50px);
+          }
+          @include pc-lg {
+            @include w-h(50px, 50px);
+          }
+          img {
+            @include w-h(30px, 30px);
+            @include phone-xs {
+              @include w-h(20px, 20px);
+            }
+            @include phone-sm {
+              @include w-h(20px, 20px);
+            }
+            @include tablet-md {
+              @include w-h(20px, 20px);
+            }
+            @include pc-sm {
+              @include w-h(20px, 20px);
+            }
+            @include pc-lg {
+              @include w-h(20px, 20px);
+            }
+          }
+        }
+        .commitmentText {
+          @include flexDirection(flex, column, center, 10px);
+          text-align: center;
+          span {
+            font-family: Montserrat-SemiBold;
+            font-size: $fs-lg;
+            color: $span-color4;
+            @include phone-xs {
+              font-size: $fs-md;
+            }
+            @include phone-sm {
+              font-size: $fs-md;
+            }
+            @include tablet-md {
+              font-size: $fs-md;
+            }
+            @include pc-sm {
+              font-size: $fs-lg;
+            }
+            @include pc-lg {
+              font-size: $fs-lg;
+            }
+          }
+          p {
+            @include w-h(240px, auto);
+            font-family: Roboto-Regular;
+            font-size: $fs-md;
+            color: $primary-color;
+            @include phone-xs {
+              @include w-h(200px, auto);
+              font-size: $fs-sm;
+            }
+            @include phone-sm {
+              @include w-h(200px, auto);
+              font-size: $fs-sm;
+            }
+            @include tablet-md {
+              @include w-h(200px, auto);
+              font-size: $fs-sm;
+            }
+            @include pc-sm {
+              @include w-h(200px, auto);
+              font-size: $fs-sm;
+            }
+            @include pc-lg {
+              @include w-h(200px, auto);
+              font-size: $fs-sm;
+            }
+          }
+        }
+      }
+    }
+  }
+  .aboutContentmentContainer {
+    background-color: $bg-color4;
+    .aboutContentment {
+      @include flexDirection(flex, column, null, 20px);
+      @include maxWidth;
+      padding: $pa-m;
+      @include phone-xs {
+        @include flexDirection(flex, column, null, 60px);
+      }
+      @include phone-sm {
+        @include flexDirection(flex, column, null, 60px);
+      }
+      @include tablet-md {
+        @include flexDirection(flex, column, null, 60px);
+      }
+      @include pc-sm {
+        @include flexDirection(flex, column, null, 60px);
+      }
+      @include pc-lg {
+        @include flexDirection(flex, column, null, 50px);
+        padding: $pa-l;
+      }
+      .customerWrapper {
+        @include align(flex, space-evenly, center);
+        @include phone-xs {
+          @include flexDirection(flex, column, center, 20px);
+        }
+        @include phone-sm {
+          @include flexDirection(flex, column, center, 20px);
+        }
+        @include tablet-md {
+          @include flexDirection(flex, column, center, 20px);
+        }
+        @include pc-sm {
+          @include flexDirection(flex, column, center, 20px);
+        }
+        // @include pc-lg {
+        //   @include flexDirection(flex, column, center, 20px);
+        // }
+        .customerImage {
+          img {
+            @include w-h(500px, 400px);
+            object-fit: cover;
+            border-radius: $br-s;
+            @include phone-xs {
+              object-fit: fill;
+              @include w-h(300px, 200px);
+            }
+            @include phone-sm {
+              object-fit: fill;
+              @include w-h(330px, 240px);
+            }
+            @include tablet-md {
+              object-fit: fill;
+              @include w-h(390px, 290px);
+            }
+            @include pc-sm {
+              object-fit: fill;
+              @include w-h(420px, 350px);
+            }
+            @include pc-lg {
+              object-fit: fill;
+              @include w-h(420px, 350px);
+            }
+          }
+        }
+        .customerContent {
+          @include flexDirection(flex, column, null, 50px);
+          @include phone-xs {
+            @include flexDirection(flex, column, null, 30px);
+          }
+          @include phone-sm {
+            @include flexDirection(flex, column, null, 30px);
+          }
+          @include tablet-md {
+            @include flexDirection(flex, column, null, 30px);
+          }
+          @include pc-sm {
+            @include flexDirection(flex, column, null, 30px);
+          }
+          @include pc-lg {
+            @include flexDirection(flex, column, null, 30px);
+          }
+          .customerTitle {
+            @include flexDirection(flex, column, start, 10px);
+            @include phone-xs {
+              @include flexDirection(flex, column, center, 10px);
+              text-align: center;
+            }
+            @include phone-sm {
+              @include flexDirection(flex, column, center, 10px);
+              text-align: center;
+            }
+            @include tablet-md {
+              @include flexDirection(flex, column, center, 10px);
+              text-align: center;
+            }
+            @include pc-sm {
+              @include flexDirection(flex, column, center, 10px);
+              text-align: center;
+            }
+            @include pc-lg {
+              @include flexDirection(flex, column, center, 20px);
+              text-align: center;
+            }
+            h2 {
+              font-family: Montserrat-SemiBold;
+              font-size: $fs-4xl;
+              color: $span-color3;
+              @include phone-xs {
+                font-size: $fs-xl;
+              }
+              @include phone-sm {
+                font-size: $fs-xl;
+              }
+              @include tablet-md {
+                font-size: $fs-2xl;
+              }
+              @include pc-sm {
+                font-size: $fs-2xl;
+              }
+              @include pc-lg {
+                font-size: $fs-3xl;
+              }
+            }
+            p {
+              @include w-h(410px, auto);
+              font-family: Roboto-Regular;
+              font-size: $fs-lg;
+              color: $card-color;
+              @include phone-xs {
+                @include w-h(280px, auto);
+                font-size: $fs-sm;
+              }
+              @include phone-sm {
+                @include w-h(280px, auto);
+                font-size: $fs-sm;
+              }
+              @include tablet-md {
+                @include w-h(320px, auto);
+                font-size: $fs-md;
+              }
+              @include pc-sm {
+                @include w-h(320px, auto);
+                font-size: $fs-md;
+              }
+              @include pc-lg {
+                @include w-h(320px, auto);
+                font-size: $fs-md;
+              }
+            }
+          }
+          .customerPoints {
+            @include flexDirection(flex, column, start, 10px);
+            div {
+              @include flex-space(flex, center, 10px);
+              img {
+                @include w-h(30px, 30px);
+                background-color: $span-color2;
+                border-radius: $br-s;
+                @include phone-xs {
+                  @include w-h(25px, 25px);
+                }
+                @include phone-sm {
+                  @include w-h(25px, 25px);
+                }
+                @include tablet-md {
+                  @include w-h(25px, 25px);
+                }
+                @include pc-sm {
+                  @include w-h(25px, 25px);
+                }
+                @include pc-lg {
+                  @include w-h(25px, 25px);
+                }
+              }
+              p {
+                @include w-h(510px, auto);
+                font-family: Roboto-Regular;
+                font-size: $fs-md;
+                color: $card-color;
+                @include phone-xs {
+                  @include w-h(270px, auto);
+                  font-size: $fs-xs;
+                }
+                @include phone-sm {
+                  @include w-h(290px, auto);
+                  font-size: $fs-xs;
+                }
+                @include tablet-md {
+                  @include w-h(385px, auto);
+                  font-size: $fs-xs;
+                }
+                @include pc-sm {
+                  @include w-h(385px, auto);
+                  font-size: $fs-sm;
+                }
+                @include pc-lg {
+                  @include w-h(385px, auto);
+                  font-size: $fs-sm;
+                }
+              }
+            }
+          }
+        }
+      }
+      .expertWrapper {
+        @include align(flex, space-evenly, center);
+        @include phone-xs {
+          @include flexDirection(flex, column, center, 20px);
+        }
+        @include phone-sm {
+          @include flexDirection(flex, column, center, 20px);
+        }
+        @include tablet-md {
+          @include flexDirection(flex, column, center, 20px);
+        }
+        @include pc-sm {
+          @include flexDirection(flex, column, center, 20px);
+        }
+        // @include pc-lg {
+        //   @include flexDirection(flex, column, center, 20px);
+        // }
+        .experContent {
+          @include flexDirection(flex, column, start, 20px);
+          @include phone-xs {
+            @include flexDirection(flex, column, center, 20px);
+            text-align: center;
+          }
+          @include phone-sm {
+            @include flexDirection(flex, column, center, 20px);
+            text-align: center;
+          }
+          @include tablet-md {
+            @include flexDirection(flex, column, center, 20px);
+            text-align: center;
+          }
+          @include pc-sm {
+            @include flexDirection(flex, column, center, 20px);
+            text-align: center;
+          }
+          @include pc-lg {
+            @include flexDirection(flex, column, center, 20px);
+            text-align: center;
+          }
+
+          h2 {
+            font-family: Montserrat-SemiBold;
+            font-size: $fs-4xl;
+            color: $span-color3;
+            @include phone-xs {
+              font-size: $fs-xl;
+            }
+            @include phone-sm {
+              font-size: $fs-xl;
+            }
+            @include tablet-md {
+              font-size: $fs-2xl;
+            }
+            @include pc-sm {
+              font-size: $fs-2xl;
+            }
+            @include pc-lg {
+              font-size: $fs-3xl;
+            }
+          }
+          p {
+            @include w-h(530px, auto);
+            font-family: Roboto-Regular;
+            font-size: $fs-lg;
+            color: $card-color;
+            @include phone-xs {
+              @include w-h(300px, auto);
+              font-size: $fs-sm;
+            }
+            @include phone-sm {
+              @include w-h(300px, auto);
+              font-size: $fs-sm;
+            }
+            @include tablet-md {
+              @include w-h(320px, auto);
+              font-size: $fs-md;
+            }
+            @include pc-sm {
+              @include w-h(320px, auto);
+              font-size: $fs-md;
+            }
+            @include pc-lg {
+              @include w-h(320px, auto);
+              font-size: $fs-md;
+            }
+          }
+        }
+        .expertImage {
+          img {
+            @include w-h(500px, 400px);
+            object-fit: cover;
+            border-radius: $br-s;
+            @include phone-xs {
+              object-fit: cover;
+              @include w-h(300px, 200px);
+            }
+            @include phone-sm {
+              object-fit: cover;
+              @include w-h(330px, 240px);
+            }
+            @include tablet-md {
+              object-fit: cover;
+              @include w-h(390px, 290px);
+            }
+            @include pc-sm {
+              object-fit: cover;
+              @include w-h(420px, 350px);
+            }
+            @include pc-lg {
+              object-fit: cover;
+              @include w-h(420px, 350px);
+            }
+          }
+        }
+      }
+    }
+  }
+}

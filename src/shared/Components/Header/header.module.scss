@@ -1,0 +1,491 @@
+@use "../../../styles/partials/fonts" as *;
+@use "../../../styles/partials/mixins" as *;
+@use "../../../styles/partials/variables" as *;
+
+.headerConatiner {
+  @include flexDirection(flex, column, center, null);
+  // @include phone-xs {
+  //   @include flexDirection(flex, column, start, null);
+  // }
+  .headerConnectContainer {
+    @include align(flex, space-between, center);
+    width: 100%;
+    padding: $pa-page3;
+    background-color: $primary-color;
+    @include phone-xs {
+      @include align(flex, space-around, start);
+      padding: $pa-responsive;
+    }
+    @include phone-sm {
+      @include align(flex, space-around, start);
+      padding: $pa-responsive;
+    }
+    @include tablet-md {
+      @include align(flex, space-around, start);
+      padding: $pa-responsive;
+    }
+    @include pc-sm {
+      @include align(flex, space-around, start);
+      padding: $pa-responsive;
+    }
+    // @include pc-lg {
+    //   @include align(flex, space-around, start);
+    //   padding: $pa-responsive;
+    // }
+    // @include tablet-sm{}
+    .headerConnection {
+      ul {
+        @include flex-space(flex, center, 25px);
+        @include phone-xs {
+          @include flexDirection(flex, column, start, 15px);
+        }
+        @include phone-sm {
+          @include flexDirection(flex, column, start, 15px);
+        }
+        @include tablet-md {
+          @include flexDirection(flex, column, start, 15px);
+        }
+        @include pc-sm {
+          @include flexDirection(flex, column, start, 15px);
+        }
+        // @include pc-lg {
+        //   @include flexDirection(flex, column, start, 15px);
+        // }
+
+        li {
+          @include flex-space(flex, center, 10px);
+          img {
+            @include w-h(25px, 25px);
+
+            @include phone-xs {
+              @include w-h(10px, 10px);
+            }
+            @include phone-sm {
+              @include w-h(10px, 10px);
+            }
+            @include tablet-md {
+              @include w-h(20px, 20px);
+            }
+            @include pc-sm {
+              @include w-h(20px, 20px);
+            }
+          }
+          span {
+            color: $card-color;
+            font-size: $fs-lg;
+            font-family: Poppins-Regular;
+            @include phone-xs {
+              font-size: $fs-xs;
+            }
+            @include phone-sm {
+              font-size: $fs-xs;
+            }
+            @include tablet-md {
+              font-size: $fs-sm;
+            }
+            @include pc-sm {
+              font-size: $fs-sm;
+            }
+            // @include pc-lg {
+            //   font-size: $fs-sm;
+            // }
+          }
+        }
+      }
+    }
+    .headerSocials {
+      @include flex-space(flex, center, 25px);
+      @include phone-xs {
+        @include flex-space(flex, start, 15px);
+      }
+      @include phone-sm {
+        @include flex-space(flex, start, 15px);
+      }
+      @include tablet-md {
+        @include flex-space(flex, start, 15px);
+      }
+      @include pc-sm {
+        @include flex-space(flex, start, 15px);
+      }
+      // @include pc-lg {
+      //   @include flex-space(flex, start, 15px);
+      // }
+      .headerSocialsIcons {
+        @include flex-space(flex, center, 20px);
+        @include phone-xs {
+          @include flexDirection(flex, column, start, 5px);
+        }
+        @include phone-sm {
+          @include flexDirection(flex, column, start, 5px);
+        }
+        @include tablet-md {
+          @include flexDirection(flex, column, start, 5px);
+        }
+        @include pc-sm {
+          @include flexDirection(flex, column, start, 5px);
+        }
+        // @include pc-lg {
+        //   @include flexDirection(flex, column, start, 5px);
+        // }
+        a {
+          img {
+            @include w-h(30px, 30px);
+            @include phone-xs {
+              @include w-h(15px, 15px);
+            }
+            @include phone-sm {
+              @include w-h(15px, 15px);
+            }
+            @include tablet-md {
+              @include w-h(20px, 20px);
+            }
+            @include pc-sm {
+              @include w-h(20px, 20px);
+            }
+            @include pc-lg {
+              @include w-h(20px, 20px);
+            }
+          }
+        }
+        .socialWhatsapp {
+          display: none;
+          @include phone-xs {
+            display: block;
+            img {
+              @include w-h(15px, 15px);
+            }
+          }
+          @include phone-sm {
+            display: block;
+            img {
+              @include w-h(15px, 15px);
+            }
+          }
+          @include tablet-md {
+            display: block;
+            img {
+              @include w-h(20px, 20px);
+            }
+          }
+          @include pc-sm {
+            display: block;
+            img {
+              @include w-h(20px, 20px);
+            }
+          }
+          // @include pc-lg {
+          //   display: block;
+          //   img {
+          //     @include w-h(20px, 20px);
+          //   }
+          // }
+        }
+      }
+      // .languageSwitcher {
+      // }
+    }
+  }
+  .headerMain {
+    @include align(flex, space-between, center);
+    width: 100%;
+    padding: $pa-page3;
+    background-color: $bg-color3;
+    @include phone-xs {
+      padding: $pa-responsive;
+      position: relative;
+    }
+    @include phone-sm {
+      padding: $pa-responsive;
+    }
+    @include tablet-md {
+      padding: $pa-responsive;
+    }
+    @include pc-sm {
+      padding: $pa-responsive;
+    }
+    // @include pc-lg {
+    //   padding: $pa-responsive;
+    // }
+    .headerIconsLeft {
+      display: none;
+      @include phone-xs {
+        display: none;
+      }
+      @include phone-sm {
+        @include flexDirection(flex, column, center, 10px);
+        position: absolute;
+        top: 150px;
+        left: 10px;
+        filter: invert(1);
+        .leftUp {
+          @include space(flex, center, center, 35px);
+          img {
+            @include w-h(30px, 30px);
+            box-shadow: 0 0 5px #fff;
+            border-radius: 50%;
+          }
+        }
+        .leftDown {
+          @include space(flex, center, center, 20px);
+          img {
+            @include w-h(30px, 30px);
+            box-shadow: 0 0 5px #fff;
+            border-radius: 50%;
+          }
+        }
+      }
+      @include tablet-md {
+        @include flexDirection(flex, column, center, 10px);
+        position: absolute;
+        top: 160px;
+        left: 20px;
+        filter: invert(1);
+        .leftUp {
+          @include space(flex, center, center, 70px);
+          img {
+            @include w-h(35px, 35px);
+            box-shadow: 0 0 5px #fff;
+            border-radius: 50%;
+          }
+        }
+        .leftDown {
+          @include space(flex, center, center, 20px);
+          img {
+            @include w-h(35px, 35px);
+            box-shadow: 0 0 5px #fff;
+            border-radius: 50%;
+          }
+        }
+      }
+      @include pc-sm {
+        @include flexDirection(flex, column, center, 25px);
+        position: absolute;
+        top: 160px;
+        left: 30px;
+        filter: invert(1);
+        .leftUp {
+          @include space(flex, center, center, 70px);
+          img {
+            @include w-h(40px, 40px);
+            box-shadow: 0 0 5px #fff;
+            border-radius: 50%;
+          }
+        }
+        .leftDown {
+          @include space(flex, center, center, 20px);
+          img {
+            @include w-h(40px, 40px);
+            box-shadow: 0 0 5px #fff;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+    .mainLogo {
+      @include phone-xs {
+        @include flexDirection(flex, column, center, 10px);
+        margin: 0 auto;
+      }
+      @include phone-sm {
+        @include flexDirection(flex, column, center, 10px);
+        margin: 0 auto;
+      }
+      @include tablet-md {
+        @include flexDirection(flex, column, center, 10px);
+        margin: 0 auto;
+      }
+      @include pc-sm {
+        @include flexDirection(flex, column, center, 10px);
+        margin: 0 auto;
+      }
+      // @include pc-lg {
+      //   @include flexDirection(flex, column, center, 10px);
+      //   margin: 0 auto;
+      // }
+      img {
+        @include w-h(120px, 74px);
+        object-fit: cover;
+        @include phone-xs {
+          @include w-h(100px, 58px);
+        }
+        @include phone-sm {
+          @include w-h(120px, 70px);
+        }
+        @include tablet-md {
+          @include w-h(130px, 80px);
+        }
+        @include pc-sm {
+          @include w-h(120px, 74px);
+        }
+        @include pc-lg {
+          @include w-h(120px, 74px);
+        }
+      }
+      .burgerMenuContainer {
+        display: none;
+        @include phone-xs {
+          @include flex-center;
+        }
+        @include phone-sm {
+          @include flex-center;
+        }
+        @include tablet-md {
+          @include flex-center;
+        }
+        @include pc-sm {
+          @include flex-center;
+        }
+      }
+    }
+    .headerIconsRight {
+      display: none;
+      @include phone-xs {
+        display: none;
+      }
+      @include phone-sm {
+        @include flexDirection(flex, column, center, 10px);
+        filter: invert(1);
+        position: absolute;
+        top: 150px;
+        right: 10px;
+        .rightUp {
+          @include space(flex, center, center, 35px);
+          img {
+            @include w-h(30px, 30px);
+            box-shadow: 0 0 5px #fff;
+            border-radius: 50%;
+          }
+        }
+        .rightDown {
+          @include space(flex, center, center, 20px);
+          img {
+            @include w-h(30px, 30px);
+            box-shadow: 0 0 5px #fff;
+            border-radius: 50%;
+          }
+        }
+      }
+      @include tablet-md {
+        @include flexDirection(flex, column, center, 10px);
+        position: absolute;
+        filter: invert(1);
+        top: 160px;
+        right: 20px;
+        .rightUp {
+          @include space(flex, center, center, 70px);
+          img {
+            @include w-h(35px, 35px);
+            box-shadow: 0 0 5px #fff;
+            border-radius: 50%;
+          }
+        }
+        .rightDown {
+          @include space(flex, center, center, 20px);
+          img {
+            @include w-h(35px, 35px);
+            box-shadow: 0 0 5px #fff;
+            border-radius: 50%;
+          }
+        }
+      }
+      @include pc-sm {
+        @include flexDirection(flex, column, center, 25px);
+        position: absolute;
+        top: 160px;
+        right: 30px;
+        filter: invert(1);
+        .rightUp {
+          @include space(flex, center, center, 70px);
+          img {
+            @include w-h(40px, 40px);
+            box-shadow: 0 0 5px #fff;
+            border-radius: 50%;
+          }
+        }
+        .rightDown {
+          @include space(flex, center, center, 20px);
+          img {
+            @include w-h(40px, 40px);
+            box-shadow: 0 0 5px #fff;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+    .headerLinks {
+      @include phone-xs {
+        display: none;
+      }
+      @include phone-sm {
+        display: none;
+      }
+      @include tablet-md {
+        display: none;
+      }
+      @include pc-sm {
+        display: none;
+      }
+      ul {
+        @include flex-space(flex, center, 40px);
+        @include phone-xs {
+          @include flex-space(flex, center, 20px);
+        }
+        @include phone-sm {
+          @include flex-space(flex, center, 20px);
+        }
+        @include tablet-md {
+          @include flex-space(flex, center, 20px);
+        }
+        @include pc-sm {
+          @include flex-space(flex, center, 20px);
+        }
+        @include pc-lg {
+          @include flex-space(flex, center, 20px);
+        }
+        li {
+          a {
+            color: $card-color;
+            font-size: $fs-xl;
+            font-family: Inter-Medium;
+            &:hover {
+              color: $hover-color;
+              transition: 0.5s;
+            }
+            @include phone-xs {
+              font-size: $fs-sm;
+            }
+            @include phone-sm {
+              font-size: $fs-sm;
+            }
+            @include tablet-md {
+              font-size: $fs-sm;
+            }
+            @include pc-sm {
+              font-size: $fs-sm;
+            }
+            @include pc-lg {
+              font-size: $fs-xl;
+            }
+          }
+        }
+      }
+    }
+    .connection {
+      @include phone-xs {
+        display: none;
+      }
+      @include phone-sm {
+        display: none;
+      }
+      @include tablet-md {
+        display: none;
+      }
+      @include pc-sm {
+        display: none;
+      }
+      // @include pc-lg {
+      //   display: none;
+      // }
+    }
+  }
+}

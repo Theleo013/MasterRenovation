@@ -1,0 +1,155 @@
+@use "../../styles/partials/fonts" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.projectsContainer {
+  .mainContent {
+    @include flexDirection(flex, column, center, 50px);
+    padding: $pa-page4;
+    @include phone-xs {
+      padding: $pa-responsive;
+    }
+    @include phone-sm {
+      padding: $pa-responsive;
+    }
+    @include tablet-md {
+      @include flexDirection(flex, column, center, 30px);
+      padding: $pa-responsive;
+    }
+    @include pc-sm {
+      @include flexDirection(flex, column, center, 30px);
+      padding: $pa-responsive;
+    }
+    h1 {
+      font-family: Poppins-Bold;
+      font-size: $fs-5xl;
+      color: $span-color2;
+      @include phone-xs {
+        font-size: $fs-xl;
+      }
+      @include phone-sm {
+        font-size: $fs-xl;
+      }
+      @include tablet-md {
+        font-size: $fs-3xl;
+      }
+      @include pc-sm {
+        font-size: $fs-4xl;
+      }
+      @include pc-lg {
+        font-size: $fs-4xl;
+      }
+    }
+    p {
+      @include w-h(900px, auto);
+      font-family: Roboto-Regular;
+      font-size: $fs-xl;
+      color: $primary-color;
+      text-align: center;
+      @include phone-xs {
+        @include w-h(300px, auto);
+        font-size: $fs-md;
+      }
+      @include phone-sm {
+        @include w-h(320px, auto);
+        font-size: $fs-md;
+      }
+      @include tablet-md {
+        @include w-h(390px, auto);
+        font-size: $fs-md;
+      }
+      @include pc-sm {
+        @include w-h(600px, auto);
+        font-size: $fs-lg;
+      }
+      @include pc-lg {
+        @include w-h(600px, auto);
+        font-size: $fs-lg;
+      }
+    }
+  }
+  .compareSliderContainer {
+    @include flex-center;
+    padding: $pa-page3;
+    @include phone-xs {
+      padding: $pa-responsive;
+    }
+    @include phone-sm {
+      padding: $pa-responsive;
+    }
+    @include tablet-md {
+      padding: $pa-responsive;
+    }
+    @include pc-sm {
+      padding: $pa-responsive;
+    }
+  }
+  .dividerCardContainer {
+    @include flexDirection(flex, column, null, 50px);
+    padding: $pa-page6;
+    @include phone-xs {
+      @include flexDirection(flex, column, null, 30px);
+      padding: $pa-responsive;
+    }
+    @include phone-sm {
+      @include flexDirection(flex, column, null, 30px);
+      padding: $pa-responsive;
+    }
+    @include tablet-md {
+      @include flexDirection(flex, column, null, 30px);
+      padding: $pa-responsive;
+    }
+    @include pc-sm {
+      @include flexDirection(flex, column, null, 30px);
+      padding: $pa-responsive;
+    }
+
+    .dividerCardTitle {
+      @include w-h(100%, auto);
+      @include flex-center;
+      font-family: Montserrat-SemiBold;
+      font-size: $fs-2xl;
+      color: $span-color2;
+      text-align: center;
+      @include phone-xs {
+        font-size: $fs-lg;
+      }
+      @include phone-sm {
+        font-size: $fs-lg;
+      }
+      @include tablet-md {
+        font-size: $fs-lg;
+      }
+      @include pc-sm {
+        font-size: $fs-xl;
+      }
+      @include pc-lg {
+        font-size: $fs-xl;
+      }
+    }
+  }
+  .magnifierContainer {
+    @include w-h(900px, 650px);
+    margin: 0 auto;
+    @include phone-xs {
+      @include w-h(300px, auto);
+      padding: $pa-responsive;
+    }
+    @include phone-sm {
+      @include w-h(340px, auto);
+      padding: $pa-responsive;
+    }
+    @include tablet-md {
+      @include w-h(450px, auto);
+      padding: $pa-responsive;
+    }
+    @include pc-sm {
+      @include w-h(550px, auto);
+      padding: $pa-responsive;
+    }
+    @include pc-lg {
+      @include w-h(700px, auto);
+      padding: $pa-responsive;
+    }
+  }
+}

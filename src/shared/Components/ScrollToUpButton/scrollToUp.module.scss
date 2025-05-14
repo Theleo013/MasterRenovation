@@ -1,0 +1,43 @@
+@use "../../../styles/partials/fonts" as *;
+@use "../../../styles/partials/mixins" as *;
+@use "../../../styles/partials/variables" as *;
+
+.scrollButton {
+  @include w-h(40px, 40px);
+  @include flex-center;
+  position: fixed;
+  bottom: 30px;
+  right: 15px;
+  border-radius: 50%;
+  background-color: $bg-color5;
+  border: $br-1;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  z-index: 1000;
+  &:hover {
+    background-color: $hover-color;
+    transition: 0.5s ease;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.15);
+  }
+  @include phone-xs {
+    @include w-h(30px, 30px);
+  }
+  @include phone-sm {
+    @include w-h(35px, 35px);
+  }
+  @include tablet-md {
+    @include w-h(35px, 35px);
+  }
+}
+.scrollIcon {
+  @include w-h(24px, 24px);
+  @include phone-xs {
+    @include w-h(15px, 15px);
+  }
+  @include phone-sm {
+    @include w-h(20px, 20px);
+  }
+  @include tablet-md {
+    @include w-h(20px, 20px);
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "Language": "Azerbaijani",
+  "homepage": {
+    "homepage": "Ana Səhifə",
+    "homepage_main_title": "PeşəkarTəmir",
+    "homepage_intro_paragraph": "Təcrübəli və peşəkar ustalarımızla ev və ofis təmirini mükəmməl şəkildə həyata keçiririk. Yüksək keyfiyyət, vaxtında iş və müştəri məmnuniyyəti bizim əsas prinsipimizdir.",
+
+    "homepage_services_button": "Xidmətlərimiz",
+
+    "homepage_experience_title": "Təcrübəmiz",
+    "homepage_experience_paragraph": "Bizim təcrübəmiz, uzun illərin qazandırdığı peşəkar bacarıqlardan və müştərilərimizin güvənindən irəli gəlir. İstər kiçik bir təmir işi, istərsə də böyük bir renovasiya olsun, hər bir layihə bizim üçün eyni dərəcədə önəmlidir.",
+
+    "our_work_title": "İşimiz",
+    "our_work_paragraph": "Bizim işimiz, müştərilərimizin məmnuniyyətini təmin etməkdir. Hər bir layihə, bizim üçün yeni bir başlanğıc və məsuliyyətdir. Evinizin hər küncündə funksionallıqla estetik harmoniyanı bir araya gətirərək, arzularınızı reallığa çeviririk.",
+
+    "cta_title": "Sizə peşəkar bir təmir lazımdır? Biz kömək edərik!",
+    "cta_paragraph": "Evinizdə və ya iş yerinizdə təmirə başlamaq istəyirsiniz, amma haradan başlayacağınızı bilmirsiniz? Divar rəngindən döşəmə örtüyünə, elektrik və su sistemlərindən interyer dizaynına qədər bütün suallarınızı cavablandırmağa hazırıq. Sizin üçün ən uyğun və sərfəli təmir həllərini tapmaqda bizə etibar edə bilərsiniz!",
+    "contact": "Əlaqə",
+    "or": "və ya"
+  },
+  "services": {
+    "services": "Xidmətlər",
+    "services_main_title": "Xidmətlərimiz",
+    "services_main_paragraph": "Eviniz yenilənməyə ehtiyac duyursa, biz buradayıq. Sıfırdan təmir işlərindən tutmuş kiçik dəyişikliklərə qədər hər mərhələdə yanınızdayıq. Təmirdə həm funksionallıq, həm də estetik görünüş ön planda tutulur. İxtisaslaşmış ustalarımızla sizə dayanıqlı, zövqlü və uzunömürlü həllər təqdim edirik. Təmir prosesini asan, rahat və problemsiz hala gətirmək üçün hər detalı düşünürük.",
+
+    "services_question_title": "Xidmətlərimizlə Bağlı Hər Hansı Bir Sualınız Var?",
+    "services_question_paragraph": "Xidmətlərimiz haqqında hər hansı bir sualınız və ya əlavə məlumat istəyiniz varsa, bizimlə əlaqə saxlamaqdan çəkinməyin. Peşəkar komandamız, ehtiyaclarınıza uyğun ən düzgün və detallı cavabları verməyə hazırdır. Sizin məmnuniyyətiniz bizim üçün önəmlidir və suallarınızı ən qısa zamanda cavablandırmağa çalışırıq."
+  },
+  "projects": {
+    "projects": "İşlərimiz",
+
+    "projects_main_title": "İşlərimiz",
+    "projects_main_paragraph": "Hər bir işi peşəkarlıqla və yüksək məsuliyyətlə yerinə yetiririk. Komandamız dəqiqlik, keyfiyyət və estetik görünüşə önəm verərək, işin hər mərhələsinə xüsusi diqqət yetirir. Qarşımıza qoyduğumuz əsas məqsəd, müştəri məmnuniyyətini təmin etmək və gördüyümüz işlərlə etibar qazanmaqdır.",
+
+    "projects_intro_title": "İşlərimizlə Tanış Olun",
+
+    "project_living_room_title": "Qonaq Otağı",
+    "project_living_room_paragraph": "Peşəkar Təmir olaraq, zal otağını evin ümumi görüntüsünü tamamlayan əsas hissə kimi dəyərləndirir və onu istənilən zövqə və dizayna uyğun şəkildə təmir edirik.",
+
+    "project_hallway_title": "Dəhliz",
+    "project_hallway_paragraph": "Dəhliz evin ilk təəssüratıdır. Peşəkar Təmir olaraq, bu məkanı zövqlə, dəqiqliklə və sizin istəklərinizə uyğun şəkildə, funksional və müasir arxitekturaya əsaslanaraq təmir edirik.",
+
+    "project_kitchen_title": "Mətbəx",
+    "project_kitchen_paragraph": "Mətbəx isə evin ürəyidir. Peşəkar Təmir olaraq, bu məkanı sizin zövqünüzə və müasir standartlara uyğun şəkildə, istər sıfırdan, istərsə də yenidən təmir edirik.",
+
+    "project_bathroom_title": "Hamam Otağı",
+    "project_bathroom_paragraph": "Peşəkar Təmir olaraq, hamam otağını yalnız gündəlik ehtiyaclar üçün deyil, rahatlıq və səliqə hissi bəxş edən bir məkan kimi nəzərdə tuturuq. istər sadə, istər modern arxitektura ilə bu sahəni müasir üslubda və zövqünüzə uyğun şəkildə təmir edirik.",
+
+    "project_kids_room_title": "Uşaq Otağı",
+    "project_kids_room_paragraph": "Uşaq otağı bir evin ən əyləncəli məkanıdır. Peşəkar Təmir olaraq, bu sahəni uşaqların rahatlığı və təhlükəsizliyi üçün zövqlə və müasir tərzdə təmir edirik.",
+
+    "project_bedroom_title": "Yataq Otağı",
+    "project_bedroom_paragraph": "Peşəkar Təmir olaraq, yataq otaqlarınızı müasir yanaşma və sizlərin tələblərinə uyğun olaraq, rahatlığınızı ön planda tutaraq istənilən dizaynda təmir edirik."
+  },
+  "about": {
+    "about": "Haqqında",
+
+    "about_experience_title": "10+ ildən artıq təcrübəyə sahib peşəkar ustalarımız xidmətinizdədir",
+    "about_experience_paragraph": "Biz, müştərilərimizin istəklərinə uyğun olaraq, fərdi yanaşma ilə xidmət göstəririk. Hər bir lahiyəyə xüsusi diqqət yetirərək müştəri məmnuniyyətini ön planda tuturuq.",
+
+    "about_commitments_title": "Öhdəliklərimiz",
+    "about_commitments_paragraph": "Siz arzulayın, biz gerçəkləşdirək!",
+
+    "about_responsibility_title": "Məsuliyyət",
+    "about_responsibility_paragraph": "İşimizi zamanında və müştəri məmnuniyyətinə uyğun olaraq icra edirik.",
+
+    "about_quality_title": "Keyfiyyət",
+    "about_quality_paragraph": "Yüksək standartlara uyğun dəqiq və dayanıqlı iş görürük.",
+
+    "about_safety_title": "Təhlükəsizlik",
+    "about_safety_paragraph": "Gördüyümüz hər təmir işinin keyfiyyətinə zəmanət veririk.",
+
+    "about_professionalism_title": "Peşəkarlıq",
+    "about_professionalism_paragraph": "Təcrübəli usta heyətimiz hər bir işi uğurla başa çatdırır.",
+
+    "about_customer_satisfaction_title": "Müştəri Məmnuniyyəti",
+    "about_customer_satisfaction_paragraph": "Bizim üçün müştəri məmnuniyyəti hər şeydən önəmlidir",
+    "about_customer_satisfaction_point1": "Peşəkar ustalarla evinizi zövqünüzə uyğun olaraq təmir edirik.",
+    "about_customer_satisfaction_point2": "Hər detalda dəqiqlik, hər işdə yüksək nəticə.",
+    "about_customer_satisfaction_point3": "Təmir işlərinizdə sürətli və etibarlı həllər təklif edirik.",
+    "about_professional_experts_title": "Peşəkar Ustalar",
+    "about_professional_experts_paragraph": "Peşəkar ustalarımız hər daim sizə xidmət etməyə hazırdır"
+  },
+
+  "cards": {
+    "card1_title": "Peşəkar Santexnik",
+    "card1_paragraph": "Santexnik ustamız işinə məsuliyyətlə yanaşır. O, bütün detallara diqqət yetirərək, işini yüksək keyfiyyət və səliqə ilə tamamlayır. Müştəri məmnuniyyəti onun üçün hər zaman ön plandadır.",
+
+    "card2_title": "Peşəkar Kafel Ustası",
+    "card2_paragraph": "Kafel ustamız, peşəkarlığı və işindəki dəqiqliyi ilə seçiləndir. O, hər işi səliqə ilə yerinə yetirir, hər ölçünü diqqətlə götürür və nəticənin ideal olması üçün maksimum məsuliyyətlə çalışır.",
+
+    "card3_title": "Peşəkar Oboy Ustası",
+    "card3_paragraph": "Peşəkar oboy ustası, oboyları vurmaqdakı yüksək peşəkarlığı ilə fərqlənir; hər bir künc və səthi dəqiqliklə işləyərək, mükəmməl uyğunluq və estetik nəticələr təqdim edir.",
+
+    "card4_title": "Peşəkar Elektrik",
+    "card4_paragraph": "Peşəkar elektrik ustası, texniki biliyi ilə təcrübə sahibidir. O, hər bir elektrik naqilini və sistemini təhlükəsizlik və mükəmməlliklə quraşdırıb, hər zaman optimal işləmə şəraitini təmin edir.",
+
+    "card5_title": "Peşəkar Suvaq ustası",
+    "card5_paragraph": "Peşəkar suvaq ustamız işini yüksək keyfiyyətlə icra edir. O, peşəkar lazer aparatı və düzgün mayaklarla hər bir səthi dəqiqliklə düzəldir. Beləliklə, hazırlanan səthlərin həm davamlı, həm də etibarlı olması təmin olunur.",
+
+    "card6_title": "Peşəkar Alçıpan Ustası",
+    "card6_paragraph": "Peşəkar alçıpan ustası, dəqiq ölçü və səliqəli quraşdırma ilə seçilir; arakəsmə divarlar, tavan sistemləri və dekorativ elementləri yüksək keyfiyyətlə tətbiq edərək estetik məkanlar yaradır.",
+
+    "card7_title": "Peşəkar Boya Ustası",
+    "card7_paragraph": "Ustamız boya və ya emulsiya vurmaqda peşəkardır. O, hər səthi düzgün hazırlayaraq, yüksək keyfiyyətli, davamlı və estetik arxitekturanı təmin edərək, istənilən zövqə uyğun göz oxşayan nəticələrə nail olur.",
+
+    "card_button": "Xidmətlər"
+  },
+
+  "footer": {
+    "footer_paragraph": "Təmir işinizi peşəkar əllərə həvalə edin. Biz hər detalda keyfiyyəti ön planda tuturuq.",
+    "copyright": "© 2025 Bütün hüquqlar qorunur.",
+    "footer_info_title": "İnformasiya",
+    "homepage": "Ana Səhifə",
+    "services": "Xidmətlər",
+    "projects": "İşlərimiz",
+    "about": "Haqqında",
+    "footer_contact_title": "Bizimlə əlaqə"
+  },
+
+  "NotFound": {
+    "paragraph": "Ziyarət etdiyiniz səhifə tapılmadı",
+    "button": "Ana Səhifəyə Qayıt"
+  }
+}

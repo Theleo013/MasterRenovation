@@ -1,0 +1,22 @@
+@use "../../../../styles/partials/fonts" as *;
+@use "../../../../styles/partials/mixins" as *;
+@use "../../../../styles/partials/variables" as *;
+
+.compareSliderContainer {
+  @include w-h(900px, 600px);
+  @include phone-xs {
+    @include w-h(300px, 200px);
+  }
+  @include phone-sm {
+    @include w-h(320px, 200px);
+  }
+  @include tablet-md {
+    @include w-h(405px, 270px);
+  }
+  @include pc-sm {
+    @include w-h(600px, 360px);
+  }
+  @include pc-lg {
+    @include w-h(730px, 390px);
+  }
+}

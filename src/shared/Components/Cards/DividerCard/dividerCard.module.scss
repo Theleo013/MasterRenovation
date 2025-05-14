@@ -1,0 +1,194 @@
+@use "../../../../styles/partials/fonts" as *;
+@use "../../../../styles/partials/mixins" as *;
+@use "../../../../styles/partials/variables" as *;
+
+.dividerCardContainer {
+  background-color: $bg-color4;
+  .dividerCardWrapper {
+    @include w-h(100%, 500px);
+    @include flexMulti(flex, row, space-around, center, null, null);
+    @include maxWidth;
+    &.reverse {
+      @include flexMulti(flex, row-reverse, space-around, center, null, null);
+      @include phone-xs {
+        @include flexDirection(flex, column-reverse, center, null);
+      }
+      @include phone-sm {
+        @include flexDirection(flex, column-reverse, center, null);
+      }
+      @include tablet-md {
+        @include flexDirection(flex, column-reverse, center, null);
+        padding: $pa-m;
+      }
+      @include pc-sm {
+        @include flexDirection(flex, column-reverse, center, null);
+        padding: $pa-m;
+      }
+    }
+    @include phone-xs {
+      @include w-h(100%, 430px);
+      @include flexDirection(flex, column, center, null);
+    }
+    @include phone-sm {
+      @include w-h(100%, 430px);
+      @include flexDirection(flex, column, center, null);
+    }
+    @include tablet-md {
+      @include flexDirection(flex, column, center, null);
+      padding: $pa-m;
+    }
+    @include pc-sm {
+      @include flexDirection(flex, column, center, null);
+      padding: $pa-m;
+    }
+    .dividerCardImage {
+      img {
+        @include w-h(500px, 400px);
+        border-radius: $br-s;
+        object-fit: cover;
+        @include phone-xs {
+          @include img-primary-size;
+        }
+        @include phone-sm {
+          @include w-h(280px, 180px);
+        }
+        @include tablet-md {
+          @include w-h(330px, 220px);
+        }
+        @include pc-sm {
+          @include w-h(390px, 280px);
+        }
+        @include pc-lg {
+          @include w-h(390px, 280px);
+        }
+      }
+    }
+    .divide {
+      @include w-h(8px, 0);
+      background-color: $card-color;
+      transform: rotate(20deg);
+      transition: height 2s ease-out;
+      overflow: hidden;
+      &.inverse {
+        transform: rotate(160deg);
+        @include phone-xs {
+          transform: rotate(0deg);
+        }
+        @include phone-sm {
+          transform: rotate(0deg);
+        }
+        @include tablet-md {
+          transform: rotate(0deg);
+        }
+        @include pc-sm {
+          transform: rotate(0deg);
+        }
+      }
+      @include phone-xs {
+        @include w-h(0, 2px);
+        transition: width 2s ease-out;
+        transform: rotate(0deg);
+      }
+      @include phone-sm {
+        @include w-h(0, 2px);
+        transition: width 2s ease-out;
+        transform: rotate(0deg);
+      }
+      @include tablet-md {
+        @include w-h(0, 2px);
+        transition: width 2s ease-out;
+        transform: rotate(0deg);
+      }
+      @include pc-sm {
+        @include w-h(0, 2px);
+        transition: width 2s ease-out;
+        transform: rotate(0deg);
+      }
+    }
+
+    .active {
+      height: 556px;
+      @include phone-xs {
+        width: 100%;
+        height: 2px;
+      }
+      @include phone-sm {
+        width: 100%;
+        height: 2px;
+      }
+      @include tablet-md {
+        width: 100%;
+        height: 2px;
+      }
+      @include pc-sm {
+        width: 100%;
+        height: 2px;
+      }
+    }
+    .dividerCardContent {
+      @include flexDirection(flex, column, start, 20px);
+      @include phone-xs {
+        @include flexDirection(flex, column, center, 20px);
+        text-align: center;
+      }
+      @include phone-sm {
+        @include flexDirection(flex, column, center, 20px);
+        text-align: center;
+      }
+      @include tablet-md {
+        @include flexDirection(flex, column, center, 20px);
+        text-align: center;
+      }
+      @include pc-sm {
+        @include flexDirection(flex, column, center, 20px);
+        text-align: center;
+      }
+      h3 {
+        font-family: Poppins-Bold;
+        font-size: $fs-5xl;
+        color: $span-color3;
+        @include phone-xs {
+          font-size: $fs-xl;
+        }
+        @include phone-sm {
+          font-size: $fs-xl;
+        }
+        @include tablet-md {
+          font-size: $fs-2xl;
+        }
+        @include pc-sm {
+          font-size: $fs-3xl;
+        }
+        @include pc-lg {
+          font-size: $fs-3xl;
+        }
+      }
+      p {
+        @include w-h(465px, auto);
+        font-family: Roboto-Regular;
+        font-size: $fs-xl;
+        color: $card-color;
+        @include phone-xs {
+          @include w-h(240px, auto);
+          font-size: $fs-sm;
+        }
+        @include phone-sm {
+          @include w-h(285px, auto);
+          font-size: $fs-sm;
+        }
+        @include tablet-md {
+          @include w-h(360px, auto);
+          font-size: $fs-md;
+        }
+        @include pc-sm {
+          @include w-h(540px, auto);
+          font-size: $fs-md;
+        }
+        @include pc-lg {
+          @include w-h(330px, auto);
+          font-size: $fs-md;
+        }
+      }
+    }
+  }
+}
