@@ -1,5 +1,5 @@
 import React from "react";
-import Styles from "@/shared/Components/Cards/SlideCard/slidecard.module.scss";
+import Styles from "@/shared/Components/Cards/SlideCard/slideCard.module.scss";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { urls } from "@/shared/Urls";
