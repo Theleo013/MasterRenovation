@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Styles from "@/shared/Components/BurgerMenu/burgerMenu.module.scss";
 import { Link } from "react-router-dom";
-import { urls } from "@/shared/urls";
+import { urls } from "@/shared/Urls";
 import { useTranslation } from "react-i18next";
 
 const BurgerMenu = () => {
