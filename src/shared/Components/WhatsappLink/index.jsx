@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { ClipLoader } from "react-spinners";
-import Styles from "@/shared/Components/whatsappLink/whatsappLink.module.scss";
+import Styles from "@/shared/Components/WhatsappLink/whatsappLink.module.scss";
 
 function WhatsappLink({ image }) {
   const [loading, setLoading] = useState(false);
