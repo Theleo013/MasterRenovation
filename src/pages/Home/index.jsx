@@ -15,7 +15,7 @@ const Home = () => {
     paragraph: "homepage.homepage_experience_paragraph",
   };
   const OurWork = {
-    video: "/assets/videos/video2.mp4",
+    video: "/assets/videos/video1.mp4",
     title: "homepage.our_work_title",
     paragraph: "homepage.our_work_paragraph",
   };
