@@ -68,7 +68,9 @@ const Header = () => {
           </div>
         </div>
         <div className={Styles.mainLogo}>
-          <img src="/assets/main_logo.png" alt="main-logo" />
+          <Link to={urls.HOME}>
+            <img src="/assets/main_logo.png" alt="main-logo" />
+          </Link>
           <div className={Styles.burgerMenuContainer}>
             <BurgerMenu />
           </div>
